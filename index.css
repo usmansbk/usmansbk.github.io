@@ -12,3 +12,11 @@ nav,
 section {
   display: block;
 }
+
+h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
