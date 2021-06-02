@@ -16,6 +16,8 @@ section {
 /* Typography */
 body {
   font-family: "Poppins";
+  padding: 0px;
+  margin: 0px;
 }
 
 .header-2 {
@@ -45,4 +47,32 @@ body {
 
 .n800 {
   color: #172b4d;
+}
+
+/* Layout */
+.app-bar {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 100px;
+  margin-left: 12px;
+  padding: 10px, 12px, 10px, 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tertiary-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  border-radius: 8px;
 }
