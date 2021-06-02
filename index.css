@@ -13,10 +13,34 @@ section {
   display: block;
 }
 
-h1 {
+/* Typography */
+.header-2 {
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+}
+
+.body-2 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.bolder {
+  font-weight: 500;
+}
+
+/* Colors */
+.b300 {
+  color: #7f8cff;
+}
+
+.n600 {
+  color: #344563;
+}
+
+.n800 {
   color: #172b4d;
 }
