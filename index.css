@@ -20,6 +20,12 @@ body {
   margin: 0px;
 }
 
+h1,
+h6,
+p {
+  margin: 0px;
+}
+
 .header-2 {
   font-weight: bold;
   font-size: 40px;
@@ -75,4 +81,16 @@ body {
   align-items: center;
   margin-right: 24px;
   border-radius: 8px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+}
+
+/* Spacing */
+.mb-12 {
+  margin-bottom: 12px;
 }
