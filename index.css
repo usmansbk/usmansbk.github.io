@@ -13,6 +13,12 @@ section {
   display: block;
 }
 
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
 /* Typography */
 body,
 h1,
@@ -166,8 +172,6 @@ p {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   width: 170px;
 }
 
@@ -185,9 +189,8 @@ p {
   display: flex;
   list-style-type: none;
   list-style: none;
-  padding: 0;
-  margin: 0;
   align-items: center;
+  margin: 20px 0 20px 0;
 }
 
 .card {
@@ -198,9 +201,7 @@ p {
 }
 
 .works {
-  padding-top: 114px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 114px 24px;
 }
 
 .snapshot {
