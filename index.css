@@ -14,16 +14,13 @@ section {
 }
 
 /* Typography */
-body {
-  font-family: "Poppins";
-  padding: 0px;
-  margin: 0px;
-}
-
+body,
 h1,
 h6,
 p {
-  margin: 0px;
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
 }
 
 .header-2 {
@@ -88,6 +85,25 @@ p {
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 170px;
+}
+
+.social-media-icons.li {
+  height: 20px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Spacing */
