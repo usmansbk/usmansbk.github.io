@@ -64,7 +64,7 @@ p {
   height: 40px;
   width: 100px;
   margin-left: 12px;
-  padding: 10px, 12px, 10px, 12px;
+  padding: 10px 12px 10px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
