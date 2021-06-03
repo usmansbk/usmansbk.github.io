@@ -131,16 +131,13 @@ p {
   display: flex;
   align-items: center;
   padding: 12px;
-
   height: 48px;
-
   background-color: #fff;
   color: #6070ff;
   border: 1px solid #7f8cff;
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 8px;
-
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -214,7 +211,6 @@ p {
 .frame-2 {
   display: flex;
   list-style-type: none;
-  list-style: none;
   align-items: center;
   margin: 20px 0 20px 0;
 }
