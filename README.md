@@ -1,6 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio: setup and mobile version skeleton
+
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 > We build our portfolio mobile website
 
