@@ -259,6 +259,7 @@ p {
 
 .skill-list {
   margin: 24px 0;
+  background-color: red;
 }
 
 .list-header {
