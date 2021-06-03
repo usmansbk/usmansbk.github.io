@@ -93,6 +93,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 
 .logo {
@@ -202,6 +203,7 @@ p {
 
 .works {
   padding: 114px 24px;
+  background-color: transparent;
 }
 
 .snapshot {
