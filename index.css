@@ -18,18 +18,19 @@ body,
 h1,
 h6,
 p {
-  font-family: "Poppins";
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header-2 {
+  font-family: "Poppins";
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
 }
 
 .body-2 {
+  font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -92,8 +93,8 @@ p {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   width: 170px;
 }
 
