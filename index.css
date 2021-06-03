@@ -15,6 +15,7 @@ section {
 
 ul,
 li {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -44,6 +45,11 @@ p {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
+}
+
+.body-1 {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .body-2 {
@@ -204,7 +210,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style-type: none;
   width: 170px;
 }
 
@@ -220,7 +225,6 @@ p {
 .tags,
 .frame-2 {
   display: flex;
-  list-style-type: none;
   align-items: center;
   margin: 20px 0 20px 0;
 }
