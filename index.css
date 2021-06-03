@@ -19,6 +19,10 @@ li {
   margin: 0;
 }
 
+body {
+  background-color: #f7f7f9;
+}
+
 /* Typography */
 body,
 h1,
@@ -70,9 +74,21 @@ p {
   line-height: 16px;
 }
 
+.small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
 /* Colors */
 .color-b300 {
   color: #7f8cff;
+}
+
+.color-b400 {
+  color: #6070ff;
 }
 
 .color-n100 {
@@ -93,7 +109,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+}
+
+.mobile-background {
+  background-image: url("images/header-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
@@ -162,7 +183,6 @@ p {
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
-  background-color: white;
   background-image: url("images/background-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,6 +230,12 @@ p {
   border-radius: 8px;
 }
 
+.tag {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+}
+
 /* Spacing */
 .mb-12 {
   margin-bottom: 12px;
@@ -222,4 +248,12 @@ p {
 
 .p-16 {
   padding: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
 }
