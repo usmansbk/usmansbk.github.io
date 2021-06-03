@@ -89,6 +89,8 @@ p {
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
+  background-color: white;
+  background-image: url("images/background-image.svg");
 }
 
 .social-media-icons {
