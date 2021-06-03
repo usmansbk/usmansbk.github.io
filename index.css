@@ -227,6 +227,8 @@ p {
 }
 
 .works {
+  display: grid;
+  grid-row-gap: 88px;
   padding: 114px 24px;
   background-color: transparent;
 }
