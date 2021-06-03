@@ -180,7 +180,43 @@ p {
   height: 20px;
 }
 
+.tags,
+.frame-2 {
+  display: flex;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.works {
+  padding-top: 114px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.snapshot {
+  border-radius: 8px;
+}
+
 /* Spacing */
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.p-16 {
+  padding: 16px;
 }
