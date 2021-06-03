@@ -79,15 +79,17 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background-color: #6070ff;
+  background-color: #fff;
   color: #6070ff;
   border: 1px solid #7f8cff;
   box-sizing: border-box;
   height: 48px;
   min-width: 93px;
+  padding: 12px;
 }
 
 .link-button {
+  border: 0 none;
   text-decoration: none;
 }
 
