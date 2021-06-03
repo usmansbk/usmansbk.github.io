@@ -113,6 +113,10 @@ p {
   color: #172b4d;
 }
 
+.color-black {
+  color: #000;
+}
+
 /* Layout */
 .app-bar {
   height: 48px;
@@ -316,4 +320,9 @@ p {
 
 .mr-8 {
   margin-right: 8px;
+}
+
+.flex-text {
+  display: flex;
+  flex-grow: 1;
 }
