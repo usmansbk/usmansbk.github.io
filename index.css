@@ -258,8 +258,19 @@ p {
 }
 
 .skill-list {
+  display: flex;
+  flex-direction: column;
   margin: 24px 0;
-  background-color: red;
+  width: 100%;
+}
+
+.skill-list > li + li {
+  border-bottom: solid 1px #dfe1e6;
+}
+
+.skill-list > li {
+  display: flex;
+  flex-direction: column;
 }
 
 .list-header {
