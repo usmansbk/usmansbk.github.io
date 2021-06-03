@@ -91,6 +91,8 @@ p {
   padding: 114px 24px;
   background-color: white;
   background-image: url("images/background-image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .social-media-icons {
