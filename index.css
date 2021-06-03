@@ -105,6 +105,10 @@ p {
   color: #344563;
 }
 
+.color-n700 {
+  color: #253858;
+}
+
 .color-n800 {
   color: #172b4d;
 }
@@ -251,6 +255,21 @@ p {
   border-radius: 8px;
   background-color: #ebebff;
   padding: 4px 12px;
+}
+
+.skill-list {
+  margin: 24px 0;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 12px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #dfe1e6;
 }
 
 /* Spacing */
