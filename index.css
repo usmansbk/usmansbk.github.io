@@ -190,6 +190,16 @@ p {
   background-size: cover;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  background-image: url("images/base-about-myself.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .social-media-icons {
   display: flex;
   justify-content: space-between;
