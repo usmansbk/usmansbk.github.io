@@ -108,7 +108,7 @@ p {
   box-sizing: border-box;
 }
 
-.tertiary-btn {
+.tertiary-button {
   display: flex;
   justify-content: center;
   align-items: center;
