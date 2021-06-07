@@ -63,6 +63,12 @@ p {
   line-height: 24px;
 }
 
+.body-4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .bolder {
   font-weight: 500;
 }
@@ -89,12 +95,20 @@ p {
 }
 
 /* Colors */
+.color-b50 {
+  color: #ebebff;
+}
+
 .color-b300 {
   color: #7f8cff;
 }
 
 .color-b400 {
   color: #6070ff;
+}
+
+.color-n0 {
+  color: #fff;
 }
 
 .color-n100 {
@@ -118,6 +132,10 @@ p {
 }
 
 /* Layout */
+.center-text {
+  text-align: center;
+}
+
 .app-bar {
   height: 48px;
   display: flex;
@@ -293,6 +311,21 @@ p {
 .separator {
   height: 1px;
   background-color: #dfe1e6;
+}
+
+.contact-me {
+  background-image: url(images/contact-form-shapes-mobile.svg),
+    url(images/contact-me-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  padding-top: 103px;
+  padding-bottom: 45px;
 }
 
 /* Spacing */
