@@ -314,18 +314,23 @@ p {
 }
 
 .contact-me {
-  background-image: url(images/contact-form-shapes-mobile.svg),
-    url(images/contact-me-background.svg);
+  background-image: url(images/contact-me-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  padding-top: 103px;
+  padding-top: 21px;
   padding-bottom: 45px;
+}
+
+.form-background {
+  padding: 24px;
+  padding-top: 82px;
+  background-image: url(images/contact-form-shapes-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 /* Spacing */
