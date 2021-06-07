@@ -333,6 +333,7 @@ footer {
 }
 
 .text-field {
+  margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -345,9 +346,9 @@ footer {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
-  display: grid;
-  grid-row-gap: 20px;
 }
 
 /* Spacing */
