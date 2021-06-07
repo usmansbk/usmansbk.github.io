@@ -313,7 +313,7 @@ p {
   background-color: #dfe1e6;
 }
 
-.contact-me {
+footer {
   background-image: url(images/contact-me-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -321,7 +321,7 @@ p {
   padding-top: 21px;
 }
 
-.form-background {
+.contact-me {
   padding: 24px;
   padding-top: 82px;
   background-image: url(images/contact-form-shapes-mobile.svg);
