@@ -233,6 +233,13 @@ p {
   margin: 20px 0 20px 0;
 }
 
+.tag {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
 .action {
   padding-top: 4px;
   padding-bottom: 12px;
@@ -255,12 +262,6 @@ p {
 
 .snapshot {
   border-radius: 8px;
-}
-
-.tag {
-  border-radius: 8px;
-  background-color: #ebebff;
-  padding: 4px 12px;
 }
 
 .skill-list {
@@ -304,24 +305,12 @@ p {
   margin-right: 12px;
 }
 
-.ml-12 {
-  margin-left: 12px;
-}
-
 .p-16 {
   padding: 16px;
 }
 
 .p-12 {
   padding: 12px;
-}
-
-.ml-8 {
-  margin-left: 8px;
-}
-
-.mr-8 {
-  margin-right: 8px;
 }
 
 .flex-text {
