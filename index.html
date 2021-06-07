@@ -279,16 +279,29 @@
           with it
         </p>
         <form action="/contact-me" method="post">
-          <input type="text" id="name" name="user_name" placeholder="Name" />
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input
+            class="text-field"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Name"
+          />
+          <input
+            class="text-field"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
           <textarea
+            class="text-field"
             name="user_message"
             id="message"
             placeholder="Write your message here..."
             cols="30"
-            rows="10"
+            rows="8"
           ></textarea>
-          <button type="submit">Get In Touch</button>
+          <button class="button" type="submit">Get In Touch</button>
         </form>
       </div>
     </section>
