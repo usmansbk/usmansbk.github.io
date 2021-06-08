@@ -149,6 +149,15 @@ p {
   align-items: center;
 }
 
+.menu-items a {
+  text-decoration: none;
+}
+
+.menu-items {
+  display: none;
+  gap: 32px;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -375,4 +384,17 @@ form {
 .flex-text {
   display: flex;
   flex-grow: 1;
+}
+
+/* Large screen devices */
+@media screen and (min-width: 375px) {
+  .menu-button {
+    display: none;
+  }
+  .menu-items {
+    display: flex;
+  }
+  .app-bar {
+    padding: 0 154px 0 155px;
+  }
 }
