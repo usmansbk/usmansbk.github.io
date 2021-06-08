@@ -29,6 +29,8 @@ body,
 h1,
 h2,
 h6,
+input,
+textarea,
 p {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 0;
@@ -61,6 +63,13 @@ p {
 .body-3 {
   font-size: 15px;
   line-height: 24px;
+}
+
+.body-4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .bolder {
@@ -97,6 +106,10 @@ p {
   color: #6070ff;
 }
 
+.color-n0 {
+  color: #fff;
+}
+
 .color-n100 {
   color: #7a869a;
 }
@@ -123,12 +136,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.mobile-background {
-  background-image: url("images/header-background-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff;
 }
 
 .logo {
@@ -199,7 +207,9 @@ p {
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
-  background-image: url("images/background-image.svg");
+  background-image:
+    url(images/background-image.svg),
+    url(images/header-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -237,11 +247,24 @@ p {
   margin: 20px 0 20px 0;
 }
 
+.tag {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+.action {
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
 .card {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
+  padding: 16px;
 }
 
 .works {
@@ -253,12 +276,6 @@ p {
 
 .snapshot {
   border-radius: 8px;
-}
-
-.tag {
-  border-radius: 8px;
-  background-color: #ebebff;
-  padding: 4px 12px;
 }
 
 .skill-list {
@@ -292,6 +309,44 @@ p {
   background-color: #dfe1e6;
 }
 
+footer {
+  background-image: url(images/contact-me-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 21px;
+  background-color: #fff;
+}
+
+.contact-me {
+  background-image: url(images/contact-form-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  padding: 82px 24px 45px 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 20px;
+}
+
+.text-field {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  resize: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
 /* Spacing */
 .mb-12 {
   margin-bottom: 12px;
@@ -302,24 +357,12 @@ p {
   margin-right: 12px;
 }
 
-.ml-12 {
-  margin-left: 12px;
-}
-
 .p-16 {
   padding: 16px;
 }
 
 .p-12 {
   padding: 12px;
-}
-
-.ml-8 {
-  margin-left: 8px;
-}
-
-.mr-8 {
-  margin-right: 8px;
 }
 
 .flex-text {
