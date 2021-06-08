@@ -29,6 +29,8 @@ body,
 h1,
 h2,
 h6,
+input,
+textarea,
 p {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 0;
@@ -317,6 +319,7 @@ footer {
 .contact-me {
   background-image: url(images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: right top;
   display: flex;
   flex-direction: column;
@@ -328,6 +331,17 @@ form {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.text-field {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  margin-bottom: 20px;
 }
 
 .align-center {
