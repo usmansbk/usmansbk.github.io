@@ -446,4 +446,8 @@ form {
     width: fit-content;
     height: fit-content;
   }
+
+  .card {
+    padding: 24px;
+  }
 }
