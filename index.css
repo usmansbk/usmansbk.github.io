@@ -393,7 +393,7 @@ form {
 }
 
 /* Large screen devices */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 600px) {
   .menu-button {
     display: none;
   }
@@ -403,7 +403,15 @@ form {
   .app-bar {
     padding: 0 154px 0 155px;
   }
+  .headline-container {
+    background-image: url(images/header-background-desktop.svg);
+    background-position: bottom left;
+  }
+
   .headline {
-    padding: 0 260px 0 260px;
+    padding: 359px 260px 255px 260px;
+    background-image: url(images/header-shapes-desktop.svg);
+    background-position: center;
+    background-size: contain;
   }
 }
