@@ -295,6 +295,20 @@ p {
   background-color: #dfe1e6;
 }
 
+footer {
+  background-image: url(images/contact-me-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 21px;
+  background-color: #fff;
+}
+
+.contact-me {
+  background-image: url(images/contact-form-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 /* Spacing */
 .mb-12 {
   margin-bottom: 12px;
