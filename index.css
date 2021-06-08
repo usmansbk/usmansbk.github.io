@@ -414,4 +414,15 @@ form {
     background-position: center;
     background-size: contain;
   }
+  footer {
+    background-image: url(images/contact-form-background-shape-desktop.svg);
+    padding: 79px 74px 48px 74px;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 245px 79px 245px;
+    background-image: url(images/contact-form-background-shapes.svg);
+  }
 }
