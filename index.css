@@ -207,8 +207,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
-  background-image:
-    url(images/background-image.svg),
+  background-image: url(images/background-image.svg),
     url(images/header-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,16 +321,14 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 82px 24px 45px 24px;
 }
 
 form {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
+  gap: 20px;
 }
 
 .text-field {
@@ -342,7 +339,7 @@ form {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
-  margin-bottom: 20px;
+  resize: none;
 }
 
 .align-center {
