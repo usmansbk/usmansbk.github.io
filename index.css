@@ -298,6 +298,7 @@ p {
 
 .snapshot {
   border-radius: 8px;
+  width: 100%;
 }
 
 .skill-list {
@@ -400,9 +401,11 @@ form {
   .menu-items {
     display: flex;
   }
+
   .app-bar {
     padding: 0 154px 0 155px;
   }
+
   .headline-container {
     background-image: url(images/header-background-desktop.svg);
     background-position: bottom left;
@@ -414,10 +417,12 @@ form {
     background-position: center;
     background-size: contain;
   }
+
   footer {
     background-image: url(images/contact-form-background-shape-desktop.svg);
     padding: 79px 74px 48px 74px;
   }
+
   .contact-me {
     display: flex;
     flex-direction: column;
@@ -425,11 +430,18 @@ form {
     padding: 62px 245px 79px 245px;
     background-image: url(images/contact-form-background-shapes.svg);
   }
+
   .text-field {
     border-radius: 2px;
   }
+
   form div {
     display: flex;
     justify-content: center;
+  }
+
+  .snapshot {
+    width: fit-content;
+    height: fit-content;
   }
 }
