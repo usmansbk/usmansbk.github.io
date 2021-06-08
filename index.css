@@ -202,16 +202,22 @@ p {
   margin-right: 24px;
 }
 
+.headline-container {
+  background-image: url(images/header-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
-  background-image:
-    url(images/background-image.svg),
-    url(images/header-background-mobile.svg);
+  background-image: url(images/background-image.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
 }
 
 .about {
