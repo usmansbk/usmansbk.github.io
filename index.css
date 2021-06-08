@@ -425,4 +425,11 @@ form {
     padding: 62px 245px 79px 245px;
     background-image: url(images/contact-form-background-shapes.svg);
   }
+  .text-field {
+    border-radius: 2px;
+  }
+  form div {
+    display: flex;
+    justify-content: center;
+  }
 }
