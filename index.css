@@ -469,4 +469,15 @@ form {
   .works {
     gap: 142px;
   }
+
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 142px;
+    gap: 37px;
+  }
+
+  .about {
+    gap: 12px;
+  }
 }
