@@ -37,6 +37,12 @@ p {
   margin: 0;
 }
 
+.header-1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
 .header-2 {
   font-weight: bold;
   font-size: 40px;
@@ -396,5 +402,8 @@ form {
   }
   .app-bar {
     padding: 0 154px 0 155px;
+  }
+  .headline {
+    padding: 0 260px 0 260px;
   }
 }
