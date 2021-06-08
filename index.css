@@ -265,19 +265,20 @@ p {
   padding-bottom: 12px;
 }
 
+.works {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 88px;
+  padding: 114px 24px;
+  background-color: transparent;
+}
+
 .card {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-}
-
-.works {
-  display: grid;
-  grid-row-gap: 88px;
-  padding: 114px 24px;
-  background-color: transparent;
 }
 
 .snapshot {
