@@ -194,6 +194,8 @@ nav {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
 }
 
 .link-button {
