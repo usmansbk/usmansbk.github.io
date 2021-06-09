@@ -404,6 +404,7 @@ form {
   .menu-button {
     display: none;
   }
+
   .menu-items {
     display: flex;
   }
@@ -485,5 +486,16 @@ form {
   .skill-list {
     width: 100%;
     margin: 4px;
+  }
+
+  .skill-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    width: 100%;
   }
 }
