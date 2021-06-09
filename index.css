@@ -179,6 +179,14 @@ nav {
   gap: 32px;
 }
 
+.nav-item {
+  transition: color 200ms;
+}
+
+.nav-item:hover {
+  color: #6070ff;
+}
+
 .button {
   display: flex;
   align-items: center;
