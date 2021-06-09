@@ -429,7 +429,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 62px 245px 79px 245px;
+    padding: 10% 25% 10% 25%;
     background-image: url(images/contact-form-background-shapes.svg);
   }
 
