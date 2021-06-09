@@ -498,4 +498,8 @@ form {
     flex-direction: column;
     width: 100%;
   }
+
+  .swap {
+    order: -1;
+  }
 }
