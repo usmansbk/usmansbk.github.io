@@ -312,7 +312,6 @@ p {
   display: flex;
   flex-direction: column;
   margin: 24px 0;
-  width: 100%;
 }
 
 .skill-list > li + li {
@@ -479,5 +478,12 @@ form {
 
   .about {
     gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .skill-list {
+    width: 100%;
+    margin: 4px;
   }
 }
