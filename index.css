@@ -141,6 +141,7 @@ p {
   height: 48px;
   display: flex;
   justify-content: space-between;
+  padding: 0 24px;
   align-items: center;
   background-color: #fff;
 }
@@ -148,11 +149,18 @@ p {
 .logo {
   height: 40px;
   width: 100px;
-  margin-left: 12px;
-  padding: 10px 12px 10px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-items a {
@@ -205,16 +213,6 @@ p {
 .button:enabled {
   border: 1px solid #7f8cff;
   box-sizing: border-box;
-}
-
-.tertiary-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-  margin-right: 24px;
 }
 
 .headline-container {
