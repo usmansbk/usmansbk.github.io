@@ -38,9 +38,9 @@ p {
 }
 
 .header-1 {
-  font-size: 48px;
-  line-height: 60px;
   font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .header-2 {
@@ -396,6 +396,12 @@ form {
 
 /* Large screen devices */
 @media screen and (min-width: 600px) {
+  .header-1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+
   .menu-button {
     display: none;
   }
