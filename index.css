@@ -139,19 +139,26 @@ p {
 /* Layout */
 .app-bar {
   height: 48px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   display: flex;
-  justify-content: space-between;
-  padding: 0 24px;
   align-items: center;
   background-color: #fff;
 }
 
 .logo {
   height: 40px;
-  width: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 24px;
+}
+
+nav {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  margin-right: 24px;
 }
 
 .menu-button {
@@ -198,6 +205,7 @@ p {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  cursor: pointer;
 }
 
 .button:active {
@@ -393,7 +401,7 @@ form {
 }
 
 /* Large screen devices */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .header-1 {
     font-size: 48px;
     line-height: 60px;
@@ -408,8 +416,12 @@ form {
     display: flex;
   }
 
-  .app-bar {
-    padding: 0 15% 0 15%;
+  .logo {
+    margin-left: 15%;
+  }
+
+  nav {
+    margin-right: 15%;
   }
 
   .headline-container {
