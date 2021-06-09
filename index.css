@@ -245,7 +245,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 40% 24px;
-  background-image: url("images/base-about-myself.svg");
+  background-image: url(images/base-about-myself.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
