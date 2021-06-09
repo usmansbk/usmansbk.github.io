@@ -462,6 +462,8 @@ form {
 
   .works {
     gap: 142px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .about-container {
