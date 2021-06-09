@@ -411,7 +411,7 @@ form {
   }
 
   .app-bar {
-    padding: 0 154px 0 155px;
+    padding: 0 15% 0 15%;
   }
 
   .headline-container {
@@ -420,7 +420,7 @@ form {
   }
 
   .headline {
-    padding: 359px 260px 255px 260px;
+    padding: 20% 25%;
     background-image: url(images/header-shapes-desktop.svg);
     background-position: center;
     background-size: contain;
