@@ -384,14 +384,13 @@ form {
   gap: 20px;
 }
 
-/*
 .instructions {
   transition: transform 200ms;
 }
 
 .instructions:hover {
   transform: translateX(8px);
-} */
+}
 
 .text-field {
   border-radius: 8px;
