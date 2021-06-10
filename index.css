@@ -152,8 +152,8 @@ p {
   display: flex;
   align-items: center;
   margin-left: 24px;
-  /* transition: transform 500ms ease 2s;
-  transform: rotate(360deg); */
+  transition: transform 500ms ease 2s;
+  transform: rotate(360deg);
 }
 
 nav {
