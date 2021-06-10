@@ -152,6 +152,8 @@ p {
   display: flex;
   align-items: center;
   margin-left: 24px;
+  transition: transform 500ms ease 2s;
+  transform: rotate(360deg);
 }
 
 nav {
@@ -179,6 +181,14 @@ nav {
   gap: 32px;
 }
 
+.nav-item {
+  transition: color 200ms;
+}
+
+.nav-item:hover {
+  color: #6070ff;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -194,6 +204,8 @@ nav {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
 }
 
 .link-button {
@@ -312,6 +324,11 @@ nav {
 .snapshot {
   border-radius: 8px;
   width: 100%;
+  transition: transform 200ms;
+}
+
+.snapshot:hover {
+  transform: scale(1.03);
 }
 
 .skill-list {
@@ -365,6 +382,14 @@ form {
   flex-direction: column;
   padding-top: 50px;
   gap: 20px;
+}
+
+.instructions {
+  transition: transform 200ms;
+}
+
+.instructions:hover {
+  transform: translateX(8px);
 }
 
 .text-field {
@@ -445,7 +470,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 25% 10% 25%;
+    padding: 10% 25%;
     background-image: url(images/contact-form-background-shapes.svg);
   }
 
