@@ -15,7 +15,6 @@ Checkout my amazing [portfolio](https://usmansbk.github.io)
 ## Built With
 
 - HTML/CSS
-- Figma
 
 ## Authors
 
