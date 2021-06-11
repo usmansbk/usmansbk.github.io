@@ -8,6 +8,10 @@
 
 This is the first milestone in the process of creating our portfolio website.
 
+## Live Link
+
+Checkout my amazing [portfolio](https://usmansbk.github.io)
+
 ## Built With
 
 - HTML/CSS
