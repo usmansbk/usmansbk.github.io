@@ -2,11 +2,11 @@
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> We build our portfolio mobile website
+> Responsive software developer portfolio
 
 ![Screen Shot 2021-06-04 at 02 20 01](https://user-images.githubusercontent.com/10219539/120571866-e8da2d00-c412-11eb-9f40-38cd7a6ef975.png)
 
-This is the first milestone in the process of creating our portfolio website.
+My software developer portfolio. Created as part of the Microverse curriculum to showcase some of my works. I used Google analytics to keep track of activity on the website, in other to see how strong my resume and job application are.
 
 ## Live Link
 
