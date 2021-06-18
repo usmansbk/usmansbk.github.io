@@ -459,6 +459,17 @@ form {
     background-image: url(images/header-shapes-desktop.svg);
     background-position: center;
     background-size: contain;
+    animation-name: animateHeadline;
+    animation-duration: 2s;
+  }
+
+  @keyframes animateHeadline {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   footer {
