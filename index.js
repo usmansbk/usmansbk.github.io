@@ -31,13 +31,98 @@ const DATA = [
 
 const portfolio = document.querySelector('#portfolio');
 
-function createCard(project) {
+function createComponent(name, props = {}) {
+  const { children = [], ...attributes } = props;
+  const element = document.createElement(name);
+  Object.keys(attributes).forEach((attribute) => {
+    element[attribute] = attributes[attribute];
+  });
+  children.forEach((child) => element.appendChild(child));
 
+  return element;
 }
 
+/**
+ * Create and returns a project card
+ */
+function createCard(project, invert) {
+  const cardImage = createComponent('img', {
+    src: project.image,
+    alt: 'Snapshot of the project',
+    className: 'snapshot mb-12',
+  });
+
+  const cardTitle = createComponent('h2', {
+    className: 'header-3 color-n800 mb-12',
+    textContent: project.title,
+  });
+
+  const captions = [];
+
+  project.captions.forEach((caption, index, arr) => {
+    const captionComponent = createComponent('span', {
+      className: `caption bolder-2 color-n${index === 0 ? '600' : '100'}`,
+      textContent: caption,
+    });
+    captions.push(captionComponent);
+    if (index !== arr.length - 1) {
+      const separator = createComponent('img', {
+        src: 'images/icons/dot.svg',
+        alt: '',
+      });
+      captions.push(separator);
+    }
+  });
+
+  const cardCaptions = createComponent('div', {
+    className: 'frame-2',
+    children: captions,
+  });
+
+  const cardText = createComponent('p', {
+    className: 'body-3 color-n600 mb-12',
+    textContent: project.description,
+  });
+
+  const cardTags = createComponent('ul', {
+    className: 'tags',
+    children: project.tags.map((tag) => createComponent('li', {
+      className: 'tag',
+      children: [createComponent('span', {
+        className: 'small color-b400',
+        textContent: tag,
+      })],
+    })),
+  });
+
+  const cardFooter = createComponent('div', {
+    className: 'action',
+    children: [createComponent('button', {
+      type: 'button',
+      className: 'button',
+      textContent: 'See Project',
+    })],
+  });
+
+  const cardBody = createComponent('div', {
+    className: `card-body + ${invert ? ' swap' : ''}`,
+    children: [cardTitle, cardCaptions, cardText, cardTags, cardFooter],
+  });
+
+  const card = createComponent('article', {
+    children: [cardImage, cardBody],
+    className: 'card',
+  });
+
+  return card;
+}
+
+/**
+ * Update the projects section of the main page with dynamically created cards
+ */
 function loadProjects(data = []) {
-  data.forEach((project) => {
-    portfolio.appendChild(createCard(project));
+  data.forEach((project, index) => {
+    portfolio.appendChild(createCard(project, index % 2 === 1));
   });
 }
 
