@@ -29,6 +29,20 @@ const DATA = [
   },
 ];
 
+const portfolio = document.querySelector('#portfolio');
+
+function createCard(project) {
+
+}
+
+function loadProjects(data = []) {
+  data.forEach((project) => {
+    portfolio.appendChild(createCard(project));
+  });
+}
+
+loadProjects(DATA);
+
 const openMenuBtn = document.querySelector('#open-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
