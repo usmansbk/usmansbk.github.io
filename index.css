@@ -179,6 +179,10 @@ p {
   justify-content: flex-end;
 }
 
+.menu-button {
+  margin-right: 12px;
+}
+
 .icon-button {
   display: flex;
   justify-content: center;
