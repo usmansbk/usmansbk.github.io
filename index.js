@@ -13,7 +13,7 @@ function toggleMenu(event) {
   overlay.forEach((part) => part.classList.toggle('menu-overlay'));
 }
 
-function onClickNav() {
+function onClickNavLink() {
   toggleMenu();
 }
 
@@ -22,6 +22,7 @@ function onScroll() {
   scrolling = true;
 }
 
+// Throttle onscroll listener
 setInterval(() => {
   if (scrolling) {
     scrolling = false;
@@ -36,5 +37,5 @@ setInterval(() => {
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
-mobileNav.addEventListener('click', onClickNav);
+mobileNav.addEventListener('click', onClickNavLink);
 window.addEventListener('scroll', onScroll, { passive: true });
