@@ -9,7 +9,7 @@ function toggleMenu(event) {
     event.preventDefault();
   }
   menu.classList.toggle('open-menu');
-  overlay.forEach(part => part.classList.toggle('menu-overlay'));
+  overlay.forEach((part) => part.classList.toggle('menu-overlay'));
 }
 
 function onClickNav() {
