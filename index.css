@@ -180,6 +180,14 @@ p {
   justify-content: flex-end;
 }
 
+.nav-link:hover {
+  color: #7f8cff;
+}
+
+.active {
+  color: #6070ff;
+}
+
 .menu-button {
   margin-right: 12px;
 }
@@ -202,17 +210,6 @@ p {
   gap: 32px;
 }
 
-.nav-item {
-  transition: color 200ms;
-}
-
-.nav-item:hover {
-  color: #7f8cff;
-}
-
-.active {
-  color: #6070ff;
-}
 
 .button {
   display: flex;
