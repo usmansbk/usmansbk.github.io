@@ -384,21 +384,17 @@ p {
   background-position: bottom right;
   padding: 82px 24px 45px 24px;
   border-top-left-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding-top: 50px;
   gap: 20px;
-}
-
-.instructions {
-  transition: transform 500ms;
-}
-
-.instructions:hover {
-  transform: translateX(8px);
 }
 
 .text-field {
@@ -526,19 +522,20 @@ form {
   }
 
   .contact-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 10% 25%;
     border-top-left-radius: 160px;
     background-image: url(images/contact-form-background-shapes.svg);
+  }
+
+  form {
+    width: 80%;
   }
 
   .text-field {
     border-radius: 2px;
   }
 
-  form div {
+  .action-button {
     display: flex;
     justify-content: center;
   }
