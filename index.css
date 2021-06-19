@@ -410,6 +410,11 @@ form {
   line-height: 20px;
   color: #172b4d;
   resize: none;
+  transition: padding 0.9s
+}
+
+.text-field:hover {
+  padding-left: 6px;
 }
 
 .align-center {
