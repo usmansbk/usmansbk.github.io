@@ -13,7 +13,7 @@ function openMenu(event) {
    *
    * Set the style of each "menuOverlay" node
    * .menu-overlay {
-   * 	filter: blur(8px);
+   *    filter: blur(8px);
    * }
    */
 }
@@ -27,7 +27,7 @@ function closeMenu(event) {
    *
    * Set the style of each "menuOverlay" node
    * .menu-overlay {
-   * 	filter: none;
+   *    filter: none;
    * }
    */
 }
