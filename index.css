@@ -92,10 +92,6 @@ p {
   font-weight: 600;
 }
 
-.drop-shadow {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .caption {
   font-size: 13px;
   line-height: 16px;
@@ -107,6 +103,10 @@ p {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 /* Colors */
@@ -150,8 +150,12 @@ p {
   background-color: #6070ff;
 }
 
-.fw-600 {
-  font-weight: 600;
+.drop-shadow {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.elevate-header {
+  filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
 }
 
 /* Layout */
