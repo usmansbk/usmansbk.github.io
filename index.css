@@ -410,7 +410,7 @@ form {
   line-height: 20px;
   color: #172b4d;
   resize: none;
-  transition: padding 0.9s
+  transition: padding 0.9s;
 }
 
 .text-field:hover {
