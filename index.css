@@ -268,9 +268,9 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 40% 24px;
-  background-image: url(images/base-about-myself.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-right-radius: 80px;
 }
 
 .about {
@@ -519,6 +519,7 @@ form {
   }
 
   .about-container {
+    border-top-right-radius: 160px;
     flex-direction: row;
     justify-content: center;
     padding: 142px;
