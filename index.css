@@ -447,6 +447,14 @@ form {
   mix-blend-mode: multiply;
 }
 
+.open-menu {
+  display: block;
+}
+
+.menu-overlay {
+  filter: blur(8px);
+}
+
 .mobile-menu .app-bar {
   justify-content: flex-end;
 }
@@ -464,6 +472,14 @@ form {
     font-size: 48px;
     line-height: 60px;
     font-weight: bold;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .menu-overlay {
+    filter: none;
   }
 
   .menu-button,
