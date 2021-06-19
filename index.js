@@ -31,6 +31,10 @@ const DATA = [
 
 const portfolio = document.querySelector('#portfolio');
 
+/**
+ * Create a HTML element. Set the class attribute and apppend children to
+ * the newly created Node.
+ */
 function createComponent(name, props = {}) {
   const { children = [], ...attributes } = props;
   const element = document.createElement(name);
