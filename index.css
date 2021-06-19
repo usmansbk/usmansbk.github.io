@@ -415,28 +415,6 @@ form {
   text-align: center;
 }
 
-/* Spacing */
-.mb-12 {
-  margin-bottom: 12px;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-.p-16 {
-  padding: 16px;
-}
-
-.p-12 {
-  padding: 12px;
-}
-
-.flex-text {
-  display: flex;
-  flex-grow: 1;
-}
-
 .mobile-menu {
   display: none;
   position: fixed;
@@ -464,6 +442,28 @@ form {
   padding: 0 28px;
   display: flex;
   flex-direction: column;
+}
+
+/* Spacing */
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.flex-text {
+  display: flex;
+  flex-grow: 1;
 }
 
 /* Large screen devices */
