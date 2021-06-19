@@ -1,3 +1,34 @@
+const DATA = [
+  {
+    title: 'Tonic',
+    image: 'images/snapshots/tonic.svg',
+    captions: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: ['html', 'css', 'javaScript'],
+  },
+  {
+    title: 'Multi-Post Stories',
+    image: 'images/snapshots/stories.svg',
+    captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
+  },
+  {
+    title: 'Facebook 360',
+    image: 'images/snapshots/facebook.svg',
+    captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
+  },
+  {
+    title: 'Uber Navigation',
+    image: 'images/snapshots/uber.svg',
+    captions: ['Uber', 'Lead Developer', '2018'],
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
+  },
+];
+
 const openMenuBtn = document.querySelector('#open-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
