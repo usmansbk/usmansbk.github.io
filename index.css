@@ -139,6 +139,14 @@ p {
   color: #000;
 }
 
+.bg-n0 {
+  background-color: #fff;
+}
+
+.bg-b400 {
+  color: #6070ff;
+}
+
 /* Layout */
 .app-bar {
   height: 48px;
