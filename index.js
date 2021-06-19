@@ -18,8 +18,7 @@ function openMenu(event) {
    */
 }
 
-function closeMenu(event) {
-  event.preventDefault();
+function hideMenu() {
   /**
    * TODO
    * Set "menu" style
@@ -32,14 +31,15 @@ function closeMenu(event) {
    */
 }
 
-function hideMenu() {
-  /**
-   * TODO
-   * Set "menu" style
-   * .mobile-menu { display: none; }
-   */
+function onClickNav() {
+  hideMenu();
+}
+
+function closeMenu(event) {
+  event.preventDefault();
+  hideMenu();
 }
 
 openMenuBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
-mobileNav.addEventListener('click', hideMenu);
+mobileNav.addEventListener('click', onClickNav);
