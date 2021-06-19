@@ -174,7 +174,7 @@ p {
   transform: rotate(360deg);
 }
 
-.nav {
+.navbar {
   display: flex;
   flex-grow: 2;
   justify-content: flex-end;
@@ -207,7 +207,7 @@ p {
 }
 
 .nav-item:hover {
-  color: #6070ff;
+  color: #7f8cff;
 }
 
 .button {
@@ -496,7 +496,7 @@ form {
     margin-left: 10%;
   }
 
-  .nav {
+  .navbar {
     margin-right: 10%;
   }
 
