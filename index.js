@@ -32,7 +32,7 @@ const DATA = [
 const portfolio = document.querySelector('#portfolio');
 
 /**
- * Create a HTML element. Set the class attribute and apppend children to
+ * Create a HTML element. Set the class attribute and apppend it's children to
  * the newly created Node.
  */
 function createComponent(name, props = {}) {
@@ -47,7 +47,8 @@ function createComponent(name, props = {}) {
 }
 
 /**
- * Create and returns a project card
+ * Create and return a project card DOM Node,
+ * to be inserted into the project section.
  */
 function createCard(project, invert) {
   const cardImage = createComponent('img', {
