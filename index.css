@@ -210,6 +210,10 @@ p {
   color: #7f8cff;
 }
 
+.active {
+  color: #6070ff;
+}
+
 .button {
   display: flex;
   align-items: center;
