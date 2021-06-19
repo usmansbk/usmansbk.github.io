@@ -27,6 +27,7 @@ li {
 
 body {
   background-color: #f7f7f9;
+  position: relative;
 }
 
 /* Typography */
