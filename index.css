@@ -144,7 +144,7 @@ p {
 }
 
 .bg-b400 {
-  color: #6070ff;
+  background-color: #6070ff;
 }
 
 /* Layout */
@@ -372,20 +372,13 @@ nav {
   background-color: #dfe1e6;
 }
 
-footer {
-  background-image: url(images/contact-me-background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 21px;
-  background-color: #fff;
-}
-
 .contact-me {
   background-image: url(images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right top;
+  background-position: bottom right;
   padding: 82px 24px 45px 24px;
+  border-top-left-radius: 80px;
 }
 
 form {
