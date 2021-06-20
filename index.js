@@ -112,11 +112,11 @@ function Tags(data = []) {
   return cardTags;
 }
 
-function Picture(src, alt) {
+function Picture(src, alt, className = 'snapshot') {
   const cardImage = createComponent('img', {
     src,
     alt,
-    className: 'snapshot',
+    className,
   });
   return cardImage;
 }
