@@ -37,6 +37,7 @@ const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
+const modal = document.querySelector('.modal');
 
 /**
  * Create a HTML element. Set it's attributes and apppend it's children to
@@ -119,6 +120,12 @@ function createCardImage(src, alt) {
   return cardImage;
 }
 
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+  overlay.forEach((part) => part.classList.toggle('modal-overlay'));
+  bodyTag.classList.toggle('off-scroll');
+}
+
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
@@ -134,13 +141,6 @@ function createCard(project, invert) {
     className: 'button',
     textContent: 'See Project',
   });
-
-  const modal = document.querySelector('.modal');
-  function toggleModal() {
-    modal.classList.toggle('show-modal');
-    overlay.forEach((part) => part.classList.toggle('modal-overlay'));
-    bodyTag.classList.toggle('off-scroll');
-  }
 
   button.addEventListener('click', toggleModal);
 
@@ -182,7 +182,7 @@ function toggleMenu(event) {
 
   menu.classList.toggle('open-menu');
   // Toggle the background blur effect
-  overlay.forEach((part) => part.classList.toggle('menu-overlay'));
+  overlay.forEach((part) => part.classList.toggle('menu-blur'));
 }
 
 function onClickNavLink() {

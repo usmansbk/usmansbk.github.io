@@ -440,7 +440,7 @@ form {
   display: block;
 }
 
-.menu-overlay {
+.menu-blur {
   filter: blur(16px);
 }
 
@@ -455,7 +455,7 @@ form {
   flex-direction: column;
 }
 
-.modal-overlay {
+.modal-blur {
   filter: blur(4px);
 }
 
