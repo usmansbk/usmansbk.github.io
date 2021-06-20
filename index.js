@@ -38,6 +38,7 @@ const menu = document.querySelector('.mobile-menu');
 const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
 const modal = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('#close-modal');
 
 /**
  * Create a HTML element. Set it's attributes and apppend it's children to
@@ -207,6 +208,7 @@ setInterval(() => {
   }
 }, 300);
 
+closeModalBtn.addEventListener('click', toggleModal);
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 mobileNav.addEventListener('click', onClickNavLink);
