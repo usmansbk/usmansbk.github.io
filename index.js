@@ -102,6 +102,7 @@ function createCardTags(data = []) {
 
   return cardTags;
 }
+
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
