@@ -552,7 +552,7 @@ form {
 /* Large screen devices */
 @media screen and (min-width: 992px) {
   .modal-content {
-    margin: 4% 8%;
+    margin: 2% 8%;
   }
 
   .modal-overlay {
