@@ -476,7 +476,7 @@ form {
 
 .modal-dialog {
   display: flex;
-  height: 100%;
+  flex-grow: 1;
   padding: 16px 0;
   justify-content: center;
   align-items: center;
