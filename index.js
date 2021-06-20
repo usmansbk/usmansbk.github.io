@@ -71,7 +71,7 @@ function createCardCaptions(data = []) {
   });
 
   const cardCaptions = createComponent('div', {
-    className: 'frame-2',
+    className: 'captions',
     children: captions,
   });
 

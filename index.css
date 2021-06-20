@@ -311,7 +311,7 @@ p {
 }
 
 .tags,
-.frame-2 {
+.captions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -461,15 +461,17 @@ form {
 
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
 
-.modal-::before {
-  mix-blend-mode: multiply;
+.modal-dialog {
 }
 
 .show-modal {
@@ -477,9 +479,6 @@ form {
 }
 
 .modal-content {
-  position: fixed;
-  top: 0;
-  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,7 +486,7 @@ form {
   border-radius: 16px;
   padding: 18px 16px;
   box-sizing: border-box;
-  border: 1px solid #dfe1e6
+  border: 1px solid #dfe1e6;
 }
 
 .modal-header {
@@ -495,7 +494,7 @@ form {
   justify-content: space-between;
 }
 
-.modal-action {
+.modal-footer {
   display: flex;
   gap: 8px;
 }
@@ -668,7 +667,7 @@ form {
     order: -1;
   }
 
-  .frame-2,
+  .captions,
   .tags {
     margin-bottom: 32px;
   }
