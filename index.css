@@ -553,10 +553,26 @@ form {
 @media screen and (min-width: 992px) {
   .modal-content {
     margin: 2% 8%;
+    padding: 24px;
   }
 
   .modal-overlay {
     filter: blur(24px);
+  }
+
+  .modal-blocks {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    margin: 3% 0;
+    justify-content: space-between;
+  }
+
+  .modal-left-block {
+    margin-right: 24px;
+  }
+
+  .modal-right-block {
+    width: 100%;
   }
 
   .header-1 {
