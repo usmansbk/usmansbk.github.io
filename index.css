@@ -496,6 +496,10 @@ form {
   justify-content: space-between;
 }
 
+.modal-image {
+  width: 100%;
+}
+
 .modal-footer {
   display: flex;
   gap: 8px;
@@ -545,6 +549,10 @@ form {
 
 /* Large screen devices */
 @media screen and (min-width: 992px) {
+  .modal-content {
+    margin: 4% 8%;
+  }
+
   .header-1 {
     font-size: 48px;
     line-height: 60px;
