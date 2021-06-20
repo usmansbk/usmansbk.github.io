@@ -497,6 +497,7 @@ form {
 
 .modal-action {
   display: flex;
+  gap: 8px;
 }
 
 /* Spacing */
