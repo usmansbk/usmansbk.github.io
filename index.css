@@ -562,7 +562,6 @@ form {
 /* Large screen devices */
 @media screen and (min-width: 992px) {
   .modal-content {
-    width: 70%;
     margin: 2% 8%;
     padding: 24px;
   }
