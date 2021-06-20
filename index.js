@@ -55,7 +55,7 @@ function createComponent(name, props = {}) {
   return element;
 }
 
-function createCardCaptions(data = []) {
+function Captions(data = []) {
   const captions = [];
 
   data.forEach((caption, index, arr) => {
@@ -81,7 +81,7 @@ function createCardCaptions(data = []) {
   return cardCaptions;
 }
 
-function createCardTitle(title) {
+function Title(title) {
   const cardTitle = createComponent('h2', {
     className: 'header-3 color-n800 mb-12',
     textContent: title,
@@ -89,7 +89,7 @@ function createCardTitle(title) {
   return cardTitle;
 }
 
-function createCardDescription(text) {
+function Paragraph(text) {
   const cardText = createComponent('p', {
     className: 'body-3 color-n600 mb-12',
     textContent: text,
@@ -97,7 +97,7 @@ function createCardDescription(text) {
   return cardText;
 }
 
-function createCardTags(data = []) {
+function Tags(data = []) {
   const cardTags = createComponent('ul', {
     className: 'tags',
     children: data.map((tag) => createComponent('li', {
@@ -112,7 +112,7 @@ function createCardTags(data = []) {
   return cardTags;
 }
 
-function createCardImage(src, alt) {
+function Picture(src, alt) {
   const cardImage = createComponent('img', {
     src,
     alt,
@@ -132,11 +132,11 @@ function toggleModal() {
  * to be inserted into the project section on the main page.
  */
 function createCard(project, invert) {
-  const image = createCardImage(project.image, 'Snapshot of the project');
-  const title = createCardTitle(project.title);
-  const captions = createCardCaptions(project.captions);
-  const description = createCardDescription(project.description);
-  const tags = createCardTags(project.tags);
+  const image = Picture(project.image, 'Snapshot of the project');
+  const title = Title(project.title);
+  const captions = Captions(project.captions);
+  const description = Paragraph(project.description);
+  const tags = Tags(project.tags);
   const button = createComponent('button', {
     type: 'button',
     className: 'button',
