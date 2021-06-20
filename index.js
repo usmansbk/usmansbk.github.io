@@ -107,7 +107,7 @@ function createCardImage(src, alt) {
   const cardImage = createComponent('img', {
     src,
     alt,
-    className: 'snapshot mb-12',
+    className: 'snapshot',
   });
   return cardImage;
 }
@@ -134,7 +134,7 @@ function createCard(project, invert) {
   });
 
   const body = createComponent('div', {
-    className: `card-body + ${invert ? ' swap' : ''}`,
+    className: `card-body mt-12 + ${invert ? ' swap' : ''}`,
     children: [title, captions, description, tags, footer],
   });
 

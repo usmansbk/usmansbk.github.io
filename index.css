@@ -451,6 +451,10 @@ form {
 }
 
 /* Spacing */
+.mt-12 {
+  margin-top: 12px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -557,7 +561,7 @@ form {
   }
 
   .card-body {
-    padding: 0 24px 0 24px;
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
   }
