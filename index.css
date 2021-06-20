@@ -520,6 +520,10 @@ form {
   flex-grow: 1;
 }
 
+.divider {
+  border: 1px solid #ebecf0
+}
+
 /* Large screen devices */
 @media screen and (min-width: 992px) {
   .header-1 {
