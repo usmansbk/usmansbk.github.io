@@ -573,7 +573,7 @@ form {
 
   .modal-blocks {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: auto auto;
     margin: 3% 0;
     justify-content: space-between;
   }
