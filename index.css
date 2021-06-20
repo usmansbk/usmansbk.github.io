@@ -467,10 +467,7 @@ form {
   width: 100%;
   height: 100%;
   overflow: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
+  z-index: 5;
 }
 
 .show-modal {
@@ -479,6 +476,10 @@ form {
 
 .modal-dialog {
   display: flex;
+  height: 100%;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
