@@ -122,7 +122,7 @@ function createCardImage(src, alt) {
 
 function toggleModal() {
   modal.classList.toggle('show-modal');
-  overlay.forEach((part) => part.classList.toggle('modal-blur'));
+  overlay.forEach((part) => part.classList.toggle('modal-overlay'));
   bodyTag.classList.toggle('off-scroll');
 }
 

@@ -455,8 +455,10 @@ form {
   flex-direction: column;
 }
 
-.modal-blur {
+.modal-overlay {
   filter: blur(4px);
+  mix-blend-mode: multiply;
+  background-color: #c1c7d0;
 }
 
 .modal {
@@ -553,10 +555,8 @@ form {
     margin: 4% 8%;
   }
 
-  .modal-blur {
+  .modal-overlay {
     filter: blur(24px);
-    mix-blend-mode: multiply;
-    background-color: #c1c7d0;
   }
 
   .header-1 {
