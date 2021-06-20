@@ -502,6 +502,7 @@ form {
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
   z-index: 5;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .modal-header {
@@ -514,8 +515,10 @@ form {
 }
 
 .modal-footer {
+  margin-top: 21px;
   display: flex;
   gap: 8px;
+  justify-content: center;
 }
 
 .off-scroll {
@@ -569,7 +572,7 @@ form {
 
   .modal-blocks {
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: 60% 40%;
     margin: 3% 0;
     justify-content: space-between;
   }
@@ -578,8 +581,13 @@ form {
     margin-right: 24px;
   }
 
+  .modal-footer {
+    justify-content: flex-start;
+  }
+
   .modal-right-block {
     width: 100%;
+    align-items: flex-start;
   }
 
   .header-1 {
