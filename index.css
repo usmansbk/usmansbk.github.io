@@ -220,6 +220,7 @@ p {
 
 .button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 12px;
   height: 48px;
@@ -494,9 +495,17 @@ form {
   justify-content: space-between;
 }
 
+.modal-action {
+  display: flex;
+}
+
 /* Spacing */
 .mt-12 {
   margin-top: 12px;
+}
+
+.mt-20 {
+  margin-top: 21px;
 }
 
 .mb-12 {
@@ -522,6 +531,10 @@ form {
 
 .divider {
   border: 1px solid #ebecf0
+}
+
+.fullwidth {
+  width: 100%;
 }
 
 /* Large screen devices */
