@@ -463,26 +463,26 @@ form {
   display: none;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
-}
-
-.modal-dialog {
+  z-index: 4;
 }
 
 .show-modal {
   display: block;
 }
 
-.modal-content {
+.modal-dialog {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px 16px;
+}
+
+.modal-content {
+  margin: auto 16px;
   border-radius: 16px;
   padding: 18px 16px;
   box-sizing: border-box;
@@ -497,6 +497,10 @@ form {
 .modal-footer {
   display: flex;
   gap: 8px;
+}
+
+.off-scroll {
+  overflow: hidden;
 }
 
 /* Spacing */

@@ -29,6 +29,7 @@ const DATA = {
   },
 };
 
+const bodyTag = document.querySelector('body');
 const openMenuBtn = document.querySelector('#open-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
@@ -138,6 +139,7 @@ function createCard(project, invert) {
   function toggleModal() {
     modal.classList.toggle('show-modal');
     overlay.forEach((part) => part.classList.toggle('modal-overlay'));
+    bodyTag.classList.toggle('off-scroll');
   }
 
   button.addEventListener('click', toggleModal);
@@ -175,6 +177,9 @@ function toggleMenu(event) {
   if (event) {
     event.preventDefault();
   }
+  // Turn off background scrolling
+  bodyTag.classList.toggle('off-scroll');
+
   menu.classList.toggle('open-menu');
   // Toggle the background blur effect
   overlay.forEach((part) => part.classList.toggle('menu-overlay'));
