@@ -46,7 +46,7 @@ function createComponent(name, props = {}) {
   return element;
 }
 
-function createCaptions(data = []) {
+function createCardCaptions(data = []) {
   const captions = [];
 
   data.forEach((caption, index, arr) => {
@@ -103,38 +103,43 @@ function createCardTags(data = []) {
   return cardTags;
 }
 
+function createCardImage(src, alt) {
+  const cardImage = createComponent('img', {
+    src,
+    alt,
+    className: 'snapshot mb-12',
+  });
+  return cardImage;
+}
+
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
  */
 function createCard(project, invert) {
-  const cardImage = createComponent('img', {
-    src: project.image,
-    alt: 'Snapshot of the project',
-    className: 'snapshot mb-12',
-  });
-
+  const image = createCardImage(project.image, 'Snapshot of the project');
   const title = createCardTitle(project.title);
-  const captions = createCaptions(project.captions);
+  const captions = createCardCaptions(project.captions);
   const description = createCardDescription(project.description);
   const tags = createCardTags(project.tags);
-
-  const cardFooter = createComponent('div', {
-    className: 'action',
-    children: [createComponent('button', {
-      type: 'button',
-      className: 'button',
-      textContent: 'See Project',
-    })],
+  const button = createComponent('button', {
+    type: 'button',
+    className: 'button',
+    textContent: 'See Project',
   });
 
-  const cardBody = createComponent('div', {
+  const footer = createComponent('div', {
+    className: 'action',
+    children: [button],
+  });
+
+  const body = createComponent('div', {
     className: `card-body + ${invert ? ' swap' : ''}`,
-    children: [title, captions, description, tags, cardFooter],
+    children: [title, captions, description, tags, footer],
   });
 
   const card = createComponent('article', {
-    children: [cardImage, cardBody],
+    children: [image, body],
     className: 'card',
   });
 
