@@ -460,11 +460,14 @@ form {
 
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
-  z-index: 4;
+  left: 0;
   width: 100%;
   height: 100%;
+}
+
+.modal-::before {
   mix-blend-mode: multiply;
 }
 
@@ -473,13 +476,17 @@ form {
 }
 
 .modal-content {
+  position: fixed;
+  top: 0;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 50px 16px;
   border-radius: 16px;
   padding: 18px 16px;
-  mix-blend-mode: normal;
+  box-sizing: border-box;
+  border: 1px solid #dfe1e6
 }
 
 .modal-header {

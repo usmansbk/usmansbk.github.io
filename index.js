@@ -29,6 +29,12 @@ const DATA = {
   },
 };
 
+const openMenuBtn = document.querySelector('#open-menu');
+const closeMenuBtn = document.querySelector('#close-menu');
+const mobileNav = document.querySelector('#mobile-nav');
+const appBar = document.querySelector('.app-bar');
+const menu = document.querySelector('.mobile-menu');
+const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
 
 /**
@@ -128,6 +134,14 @@ function createCard(project, invert) {
     textContent: 'See Project',
   });
 
+  const modal = document.querySelector('.modal');
+  function toggleModal() {
+    modal.classList.toggle('show-modal');
+    overlay.forEach((part) => part.classList.toggle('modal-overlay'));
+  }
+
+  button.addEventListener('click', toggleModal);
+
   const footer = createComponent('div', {
     className: 'action',
     children: [button],
@@ -156,13 +170,6 @@ function loadProjects(data = []) {
 }
 
 loadProjects(Object.values(DATA));
-
-const openMenuBtn = document.querySelector('#open-menu');
-const closeMenuBtn = document.querySelector('#close-menu');
-const mobileNav = document.querySelector('#mobile-nav');
-const appBar = document.querySelector('.app-bar');
-const menu = document.querySelector('.mobile-menu');
-const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 
 function toggleMenu(event) {
   if (event) {
