@@ -112,10 +112,10 @@ function Tags(data = []) {
   return cardTags;
 }
 
-function Picture(src, alt, className = 'snapshot') {
+function Picture(src, className = 'snapshot') {
   const cardImage = createComponent('img', {
     src,
-    alt,
+    alt: 'Snapshot of project',
     className,
   });
   return cardImage;
@@ -132,7 +132,7 @@ function toggleModal() {
  * to be inserted into the project section on the main page.
  */
 function createCard(project, invert) {
-  const image = Picture(project.image, 'Snapshot of the project');
+  const image = Picture(project.image);
   const title = Title(project.title);
   const captions = Captions(project.captions);
   const description = Paragraph(project.description);
