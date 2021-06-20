@@ -218,7 +218,7 @@ p {
   gap: 32px;
 }
 
-.normal-secondary-button {
+.link-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -259,11 +259,6 @@ p {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
   cursor: pointer;
-}
-
-.link-button {
-  border: 0 none;
-  text-decoration: none;
 }
 
 .button:active {
