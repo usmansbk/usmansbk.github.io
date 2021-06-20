@@ -457,7 +457,6 @@ form {
 
 .modal-overlay {
   filter: blur(4px);
-  mix-blend-mode: multiply;
   background-color: #c1c7d0;
 }
 
@@ -470,6 +469,7 @@ form {
   height: 100%;
   overflow: auto;
   z-index: 4;
+  background-blend-mode: multiply;
 }
 
 .show-modal {
