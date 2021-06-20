@@ -553,6 +553,12 @@ form {
     margin: 4% 8%;
   }
 
+  .modal-blur {
+    filter: blur(24px);
+    mix-blend-mode: multiply;
+    background-color: #c1c7d0;
+  }
+
   .header-1 {
     font-size: 48px;
     line-height: 60px;
