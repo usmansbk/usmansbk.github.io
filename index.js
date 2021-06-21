@@ -14,10 +14,6 @@ function toggleMenu(event) {
   document.body.classList.toggle('scroll-off');
 }
 
-function onClickNavLink() {
-  toggleMenu();
-}
-
 let scrolling = false;
 function onScroll() {
   scrolling = true;
@@ -38,5 +34,5 @@ setInterval(() => {
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
-navLinks.addEventListener('click', onClickNavLink);
+navLinks.addEventListener('click', () => toggleMenu());
 window.addEventListener('scroll', onScroll, { passive: true });
