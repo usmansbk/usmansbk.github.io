@@ -120,6 +120,7 @@ function Picture(src, className = 'snapshot') {
     alt: 'Snapshot of project',
     className,
   });
+
   return image;
 }
 
