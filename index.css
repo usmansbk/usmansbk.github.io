@@ -240,11 +240,6 @@ p {
   cursor: pointer;
 }
 
-.link-button {
-  border: 0 none;
-  text-decoration: none;
-}
-
 .button:active {
   background-color: #2230d2;
   color: #fff;
