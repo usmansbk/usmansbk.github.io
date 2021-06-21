@@ -36,6 +36,20 @@ const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
 
+/**
+ * Helper function for creating HTML DOM elements
+ */
+function createComponent(name, props = {}) {
+  const { children = [], ...attributes } = props;
+  const element = document.createElement(name);
+  Object.keys(attributes).forEach((attribute) => {
+    element[attribute] = attributes[attribute];
+  });
+  children.forEach((child) => element.appendChild(child));
+
+  return element;
+}
+
 function toggleMenu(event) {
   if (event) {
     event.preventDefault();
