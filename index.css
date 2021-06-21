@@ -472,7 +472,6 @@ form {
 }
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -481,10 +480,6 @@ form {
   overflow: auto;
   z-index: 4;
   background-blend-mode: multiply;
-}
-
-.show-modal {
-  display: block;
 }
 
 .modal-dialog {

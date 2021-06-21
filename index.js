@@ -37,8 +37,7 @@ const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
-const modal = document.querySelector('.modal');
-const closeModalBtn = document.querySelector('#close-modal');
+const modal = document.querySelector('#mount-modal');
 
 /**
  * Create a HTML element. Set it's attributes and apppend it's children to
@@ -127,12 +126,11 @@ function Picture(src, className = 'snapshot') {
 }
 
 function toggleModal() {
-  modal.classList.toggle('show-modal');
   overlay.forEach((part) => part.classList.toggle('modal-overlay'));
   bodyTag.classList.toggle('off-scroll');
 }
 
-function LinkButton({ text, icon, href }) {
+function Button({ text, icon, href }) {
   const button = createComponent('a', {
     className: 'link-button',
     href,
@@ -154,12 +152,12 @@ function createModal(project) {
   const footer = createComponent('div', {
     className: 'modal-footer',
     children: [
-      LinkButton({
+      Button({
         text: 'See live',
         icon: 'live-link',
         href: '#live-link',
       }),
-      LinkButton({
+      Button({
         text: 'See Source',
         icon: 'github-blue',
         href: '#source',
@@ -202,6 +200,8 @@ function createModal(project) {
     children: [Icon('cancel')],
   });
 
+  closeButton.addEventListener('click', toggleModal);
+
   const header = createComponent('div', {
     className: 'modal-header mb-12',
     children: [Title(project.title), closeButton],
@@ -241,7 +241,11 @@ function createCard(project, invert) {
     textContent: 'See Project',
   });
 
-  button.addEventListener('click', toggleModal);
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal.appendChild(createModal(project));
+    toggleModal();
+  });
 
   const footer = createComponent('div', {
     className: 'action',
@@ -306,7 +310,6 @@ setInterval(() => {
   }
 }, 300);
 
-closeModalBtn.addEventListener('click', toggleModal);
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 mobileNav.addEventListener('click', onClickNavLink);
