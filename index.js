@@ -5,7 +5,6 @@ const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
 
-
 function toggleMenu(event) {
   if (event) {
     event.preventDefault();
