@@ -359,6 +359,11 @@ p {
   padding: 16px;
 }
 
+.card:hover {
+  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+  cursor: pointer;
+}
+
 .snapshot {
   border-radius: 8px;
   width: 100%;
