@@ -258,8 +258,7 @@ function createCard(project, invert) {
     className: 'card',
   });
 
-  CardButton.addEventListener('click', (event) => {
-    event.preventDefault();
+  CardButton.addEventListener('click', () => {
     modalContainer.appendChild(createModal(project));
     toggleModal();
   });
@@ -278,10 +277,7 @@ function loadProjects(data = []) {
 
 loadProjects(Object.values(DATA));
 
-function toggleMenu(event) {
-  if (event) {
-    event.preventDefault();
-  }
+function toggleMenu() {
   menu.classList.toggle('open-menu');
   container.classList.toggle('menu-overlay');
   document.body.classList.toggle('scroll-off');
@@ -307,5 +303,5 @@ setInterval(() => {
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
-navLinks.addEventListener('click', () => toggleMenu());
+navLinks.addEventListener('click', toggleMenu);
 window.addEventListener('scroll', onScroll, { passive: true });
