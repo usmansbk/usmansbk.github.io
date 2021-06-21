@@ -132,12 +132,66 @@ function toggleModal() {
   bodyTag.classList.toggle('off-scroll');
 }
 
+function LinkButton({ text, icon, href }) {
+  const button = createComponent('a', {
+    className: 'link-button',
+    href,
+    children: [
+      createComponent('span', {
+        innerContent: text,
+      }),
+      Icon(icon),
+    ],
+  });
+
+  return button;
+}
+
+/**
+ * Create Modal component for project details
+ */
 function createModal(project) {
+  const footer = createComponent('div', {
+    className: 'modal-footer',
+    children: [
+      LinkButton({
+        text: 'See live',
+        icon: 'live-link',
+        href: '#live-link',
+      }),
+      LinkButton({
+        text: 'See Source',
+        icon: 'github-blue',
+        href: '#source',
+      }),
+    ],
+  });
+
+  const divider = createComponent('div', {
+    className: 'divider',
+  });
+
+  const right = createComponent('div', {
+    className: 'modal-right-block',
+    children: [Tags(project.tags), divider, footer],
+  });
+
+  const left = createComponent('div', {
+    className: 'modal-left-block',
+    children: [Paragraph(project.description)],
+  });
+
+  const bodyContent = createComponent('div', {
+    className: 'modal-blocks mt-12',
+    children: [left, right],
+  });
+
   const body = createComponent('div', {
     className: 'modal-body',
     children: [
       Captions(project.captions),
       Picture(project.image, 'modal-image'),
+      bodyContent,
     ],
   });
 
