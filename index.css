@@ -462,6 +462,11 @@ form {
   flex-direction: column;
 }
 
+.modal-overlay {
+  filter: blur(4px);
+  background-color: #c1c7d0;
+}
+
 .modal {
   position: fixed;
   top: 0;
