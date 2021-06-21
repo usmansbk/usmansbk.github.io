@@ -127,6 +127,15 @@ function toggleModal() {
   bodyTag.classList.toggle('off-scroll');
 }
 
+function createModal(project) {
+  const modal = createComponent('div', {
+    className: 'modal',
+    children: [],
+  });
+
+  return modal;
+}
+
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
