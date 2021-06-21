@@ -32,6 +32,7 @@ const DATA = {
 const openMenuBtn = document.getElementById('open-menu');
 const closeMenuBtn = document.getElementById('close-menu');
 const navLinks = document.getElementById('mobile-nav');
+const modalContainer = document.getElementById('modal-container');
 const portfolio = document.getElementById('portfolio');
 const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
@@ -135,6 +136,11 @@ function Button({ text, icon, href }) {
   });
 
   return button;
+}
+
+function toggleModal() {
+  container.classList.toggle('modal-overlay');
+  document.body.classList.toggle('scroll-off');
 }
 
 /**
@@ -244,6 +250,12 @@ function createCard(project, invert) {
   const Card = createComponent('article', {
     children: [CardImage, CardBody],
     className: 'card',
+  });
+
+  CardButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    modalContainer.appendChild(createModal(project));
+    toggleModal();
   });
 
   return Card;
