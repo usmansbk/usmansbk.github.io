@@ -50,6 +50,77 @@ function createComponent(name, props = {}) {
   return element;
 }
 
+function Icon(name) {
+  const icon = createComponent('img', {
+    src: `images/icons/${name}.svg`,
+    alt: '',
+  });
+
+  return icon;
+}
+
+function Captions(data = []) {
+  const captions = [];
+
+  data.forEach((caption, index, arr) => {
+    const captionComponent = createComponent('span', {
+      className: `caption bolder-2 color-n${index === 0 ? '600' : '100'}`,
+      textContent: caption,
+    });
+    captions.push(captionComponent);
+    if (index !== arr.length - 1) {
+      captions.push(Icon('dot'));
+    }
+  });
+
+  const cardCaptions = createComponent('div', {
+    className: 'captions',
+    children: captions,
+  });
+
+  return cardCaptions;
+}
+
+function Title(title) {
+  const cardTitle = createComponent('h2', {
+    className: 'header-3 color-n800 mb-12',
+    textContent: title,
+  });
+  return cardTitle;
+}
+
+function Paragraph(text) {
+  const cardText = createComponent('p', {
+    className: 'body-3 color-n600 mb-12',
+    textContent: text,
+  });
+  return cardText;
+}
+
+function Tags(data = []) {
+  const cardTags = createComponent('ul', {
+    className: 'tags',
+    children: data.map((tag) => createComponent('li', {
+      className: 'tag',
+      children: [createComponent('span', {
+        className: 'small color-b400',
+        textContent: tag,
+      })],
+    })),
+  });
+
+  return cardTags;
+}
+
+function Picture(src, className = 'snapshot') {
+  const cardImage = createComponent('img', {
+    src,
+    alt: 'Snapshot of project',
+    className,
+  });
+  return cardImage;
+}
+
 function toggleMenu(event) {
   if (event) {
     event.preventDefault();
