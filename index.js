@@ -136,7 +136,7 @@ function Button({ text, icon, href }) {
     href,
     children: [
       createComponent('span', {
-        innerContent: text,
+        innerText: text,
       }),
       Icon(icon),
     ],
