@@ -472,6 +472,10 @@ form {
   flex-grow: 1;
 }
 
+.scroll-off {
+  overflow: hidden;
+}
+
 /* Large screen devices */
 @media screen and (min-width: 992px) {
   .header-1 {
