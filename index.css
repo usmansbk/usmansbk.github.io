@@ -318,7 +318,7 @@ p {
 }
 
 .tags,
-.frame-2 {
+.captions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -691,7 +691,7 @@ form {
     order: -1;
   }
 
-  .frame-2,
+  .captions,
   .tags {
     margin-bottom: 32px;
   }
