@@ -32,6 +32,7 @@ const DATA = {
 const openMenuBtn = document.getElementById('open-menu');
 const closeMenuBtn = document.getElementById('close-menu');
 const navLinks = document.getElementById('mobile-nav');
+const portfolio = document.getElementById('portfolio');
 const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
@@ -121,7 +122,6 @@ function Picture(src, className = 'snapshot') {
   return cardImage;
 }
 
-
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
@@ -155,6 +155,17 @@ function createCard(project, invert) {
 
   return Card;
 }
+
+/**
+ * Add projects to HTML portfolio section
+ */
+function loadProjects(data = []) {
+  data.forEach((project, index) => {
+    portfolio.appendChild(createCard(project, index % 2 === 1));
+  });
+}
+
+loadProjects(Object.values(DATA));
 
 function toggleMenu(event) {
   if (event) {
