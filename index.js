@@ -218,6 +218,12 @@ function createModal(project) {
     children: [Dialog],
   });
 
+  CloseButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    toggleModal();
+    modalContainer.removeChild(Modal);
+  });
+
   return Modal;
 }
 
