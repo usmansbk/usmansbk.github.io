@@ -1,6 +1,6 @@
 const openMenuBtn = document.querySelector('#open-menu');
 const closeMenuBtn = document.querySelector('#close-menu');
-const mobileNav = document.querySelector('#mobile-nav');
+const navLinks = document.querySelector('#mobile-nav');
 const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
@@ -38,5 +38,5 @@ setInterval(() => {
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
-mobileNav.addEventListener('click', onClickNavLink);
+navLinks.addEventListener('click', onClickNavLink);
 window.addEventListener('scroll', onScroll, { passive: true });
