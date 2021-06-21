@@ -198,12 +198,18 @@ p {
 }
 
 .icon-button {
+  border: none;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   width: 40px;
   height: 40px;
+}
+
+.icon-button:hover {
+  cursor: pointer;
 }
 
 .menu-items a {

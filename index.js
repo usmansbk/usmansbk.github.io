@@ -191,7 +191,7 @@ function createModal(project) {
     ],
   });
 
-  const CloseButton = createComponent('a', {
+  const CloseButton = createComponent('button', {
     id: 'close-modal',
     className: 'icon-button',
     href: '#close-modal',
