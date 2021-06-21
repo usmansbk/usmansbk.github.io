@@ -121,6 +121,41 @@ function Picture(src, className = 'snapshot') {
   return cardImage;
 }
 
+
+/**
+ * Create and return a project card DOM Node,
+ * to be inserted into the project section on the main page.
+ */
+function createCard(project, invert) {
+  const CardImage = Picture(project.image);
+  const CardTitle = Title(project.title);
+  const CardText = Paragraph(project.description);
+  const ProjectCaptions = Captions(project.captions);
+  const ProjectTags = Tags(project.tags);
+  const CardButton = createComponent('button', {
+    type: 'button',
+    className: 'button',
+    textContent: 'See Project',
+  });
+
+  const CardFooter = createComponent('div', {
+    className: 'action',
+    children: [CardButton],
+  });
+
+  const CardBody = createComponent('div', {
+    className: `card-body mt-12 + ${invert ? ' swap' : ''}`,
+    children: [CardTitle, ProjectCaptions, CardText, ProjectTags, CardFooter],
+  });
+
+  const Card = createComponent('article', {
+    children: [CardImage, CardBody],
+    className: 'card',
+  });
+
+  return Card;
+}
+
 function toggleMenu(event) {
   if (event) {
     event.preventDefault();
