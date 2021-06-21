@@ -1,39 +1,5 @@
-# Portfolio: mobile version
-
-![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
-
-> Responsive software developer portfolio
-
-![Screen Shot 2021-06-04 at 02 20 01](https://user-images.githubusercontent.com/10219539/120571866-e8da2d00-c412-11eb-9f40-38cd7a6ef975.png)
-
-My software developer portfolio. Created as part of the Microverse curriculum to showcase some of my works. I used Google analytics to keep track of activity on the website, in other to see how strong my resume and job application are.
-
-## Live Link
-
-Checkout my [portfolio](https://usmansbk.github.io)
-
-## Built With
-
-- HTML/CSS
-
-## Authors
-
-👤 **Usman Suleiman**
-
-- GitHub: [@usmansbk](https://github.com/usmansbk)
-- Twitter: [@usmansbk](https://twitter.com/usmansbk)
-- LinkedIn: [Usman Suleiman](https://www.linkedin.com/in/usman-suleiman-82b444140/)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Microverse design team
+# FOR GOD SAKE YOU ALL SHOULD STOP PLAGIARIZING MY WORK. YOU'RE DECEIVING YOUR SELVES. IT'LL TAKE YOU NOWHERE.
+# BETTER TO TAKE A STEP BACK AND LEARN, THEN COME BACK AND ATTEMPT AGAIN, THAN TO KEEP LYING TO YOURSELF THINKING YOU'RE MOVING FORWARD.
+# I'M THE ONE MOVING FORWARD.
+# I WON'T BE THE ONE TO DO YOUR JOB INTERVIEW FOR YOU!
+# GOOD LUCK!
