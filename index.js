@@ -122,6 +122,99 @@ function Picture(src, className = 'snapshot') {
   return cardImage;
 }
 
+function Button({ text, icon, href }) {
+  const button = createComponent('a', {
+    className: 'link-button',
+    href,
+    children: [
+      createComponent('span', {
+        innerText: text,
+      }),
+      Icon(icon),
+    ],
+  });
+
+  return button;
+}
+
+/**
+ * Create Modal component for project details
+ */
+function createModal(project) {
+  const ModalFooter = createComponent('div', {
+    className: 'modal-footer',
+    children: [
+      Button({
+        text: 'See live',
+        icon: 'live-link',
+        href: '#live-link',
+      }),
+      Button({
+        text: 'See Source',
+        icon: 'github-blue',
+        href: '#source',
+      }),
+    ],
+  });
+
+  const Divider = createComponent('div', {
+    className: 'divider',
+  });
+
+  const Right = createComponent('div', {
+    className: 'modal-right-block',
+    children: [Tags(project.tags), Divider, ModalFooter],
+  });
+
+  const Left = createComponent('div', {
+    className: 'modal-left-block',
+    children: [Paragraph(project.description)],
+  });
+
+  const ModalBodyContent = createComponent('div', {
+    className: 'modal-blocks mt-12',
+    children: [Left, Right],
+  });
+
+  const ModalBody = createComponent('div', {
+    className: 'modal-body',
+    children: [
+      Captions(project.captions),
+      Picture(project.image, 'modal-image'),
+      ModalBodyContent,
+    ],
+  });
+
+  const CloseButton = createComponent('a', {
+    id: 'close-modal',
+    className: 'icon-button',
+    href: '#close-modal',
+    children: [Icon('cancel')],
+  });
+
+  const ModalHeader = createComponent('div', {
+    className: 'modal-header mb-12',
+    children: [Title(project.title), CloseButton],
+  });
+
+  const ModalContent = createComponent('div', {
+    className: 'modal-content bg-n0',
+    children: [ModalHeader, ModalBody],
+  });
+
+  const Dialog = createComponent('div', {
+    className: 'modal-dialog',
+    children: [ModalContent],
+  });
+
+  const Modal = createComponent('div', {
+    className: 'modal',
+    children: [Dialog],
+  });
+
+  return Modal;
+}
+
 /**
  * Create and return a project card DOM Node,
  * to be inserted into the project section on the main page.
