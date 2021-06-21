@@ -55,6 +55,15 @@ function createComponent(name, props = {}) {
   return element;
 }
 
+function Icon(name) {
+  const icon = createComponent('img', {
+    src: `images/icons/${name}.svg`,
+    alt: '',
+  });
+
+  return icon;
+}
+
 function Captions(data = []) {
   const captions = [];
 
@@ -65,11 +74,7 @@ function Captions(data = []) {
     });
     captions.push(captionComponent);
     if (index !== arr.length - 1) {
-      const separator = createComponent('img', {
-        src: 'images/icons/dot.svg',
-        alt: '',
-      });
-      captions.push(separator);
+      captions.push(Icon('dot'));
     }
   });
 
@@ -128,9 +133,39 @@ function toggleModal() {
 }
 
 function createModal(project) {
+  const body = createComponent('div', {
+    className: 'modal-body',
+    children: [
+      Captions(project.captions),
+      Picture(project.image, 'modal-image'),
+    ],
+  });
+
+  const closeButton = createComponent('a', {
+    id: 'close-modal',
+    className: 'icon-button',
+    href: '#close-modal',
+    children: [Icon('cancel')],
+  });
+
+  const header = createComponent('div', {
+    className: 'modal-header mb-12',
+    children: [Title(project.title), closeButton],
+  });
+
+  const content = createComponent('div', {
+    className: 'modal-content bg-n0',
+    children: [header, body],
+  });
+
+  const dialog = createComponent('div', {
+    className: 'modal-dialog',
+    children: [content],
+  });
+
   const modal = createComponent('div', {
     className: 'modal',
-    children: [],
+    children: [dialog],
   });
 
   return modal;
