@@ -37,7 +37,7 @@ const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
-const modal = document.querySelector('#mount-modal');
+const mountModal = document.querySelector('#mount-modal');
 
 /**
  * Create a HTML element. Set it's attributes and apppend it's children to
@@ -200,7 +200,12 @@ function createModal(project) {
     children: [Icon('cancel')],
   });
 
-  closeButton.addEventListener('click', toggleModal);
+  closeButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    toggleModal();
+    const modal = document.querySelector('.modal');
+    mountModal.removeChild(modal);
+  });
 
   const header = createComponent('div', {
     className: 'modal-header mb-12',
@@ -243,7 +248,7 @@ function createCard(project, invert) {
 
   button.addEventListener('click', (event) => {
     event.preventDefault();
-    modal.appendChild(createModal(project));
+    mountModal.appendChild(createModal(project));
     toggleModal();
   });
 
