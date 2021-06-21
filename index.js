@@ -152,7 +152,7 @@ function createModal(project) {
     children: [
       Button({
         text: 'See live',
-        icon: 'live-link',
+        icon: 'link',
         href: '#live-link',
       }),
       Button({
