@@ -62,45 +62,45 @@ function Icon(name) {
 }
 
 function Captions(data = []) {
-  const captions = [];
+  const row = [];
 
-  data.forEach((caption, index, arr) => {
-    const captionComponent = createComponent('span', {
+  data.forEach((text, index, arr) => {
+    const caption = createComponent('span', {
       className: `caption bolder-2 color-n${index === 0 ? '600' : '100'}`,
-      textContent: caption,
+      textContent: text,
     });
-    captions.push(captionComponent);
+    row.push(caption);
     if (index !== arr.length - 1) {
-      captions.push(Icon('dot'));
+      row.push(Icon('dot'));
     }
   });
 
-  const cardCaptions = createComponent('div', {
+  const captions = createComponent('div', {
     className: 'captions',
-    children: captions,
+    children: row,
   });
 
-  return cardCaptions;
+  return captions;
 }
 
-function Title(title) {
-  const cardTitle = createComponent('h2', {
+function Title(text) {
+  const title = createComponent('h2', {
     className: 'header-3 color-n800 mb-12',
-    textContent: title,
+    textContent: text,
   });
-  return cardTitle;
+  return title;
 }
 
 function Paragraph(text) {
-  const cardText = createComponent('p', {
+  const paragraph = createComponent('p', {
     className: 'body-3 color-n600 mb-12',
     textContent: text,
   });
-  return cardText;
+  return paragraph;
 }
 
 function Tags(data = []) {
-  const cardTags = createComponent('ul', {
+  const tags = createComponent('ul', {
     className: 'tags',
     children: data.map((tag) => createComponent('li', {
       className: 'tag',
@@ -111,16 +111,16 @@ function Tags(data = []) {
     })),
   });
 
-  return cardTags;
+  return tags;
 }
 
 function Picture(src, className = 'snapshot') {
-  const cardImage = createComponent('img', {
+  const image = createComponent('img', {
     src,
     alt: 'Snapshot of project',
     className,
   });
-  return cardImage;
+  return image;
 }
 
 function Button({ text, icon, href }) {
