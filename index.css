@@ -446,6 +446,51 @@ form {
   flex-direction: column;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 4;
+  background-blend-mode: multiply;
+}
+
+.modal-dialog {
+  display: flex;
+  flex-grow: 1;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: auto 16px;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-sizing: border-box;
+  border: 1px solid #dfe1e6;
+  z-index: 5;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-image {
+  width: 100%;
+}
+
+.modal-footer {
+  margin-top: 21px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
 /* Spacing */
 .mt-12 {
   margin-top: 12px;
