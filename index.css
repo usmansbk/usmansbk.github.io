@@ -646,14 +646,9 @@ form {
     justify-content: center;
   }
 
-  .snapshot {
-    width: 544px;
-    height: 448px;
-  }
-
   .card {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     padding: 24px;
     justify-content: center;
   }
