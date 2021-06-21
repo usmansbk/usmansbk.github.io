@@ -219,8 +219,7 @@ function createModal(project) {
     children: [Dialog],
   });
 
-  CloseButton.addEventListener('click', (event) => {
-    event.preventDefault();
+  CloseButton.addEventListener('click', () => {
     toggleModal();
     modalContainer.removeChild(Modal);
   });
