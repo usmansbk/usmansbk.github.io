@@ -215,6 +215,22 @@ p {
   gap: 32px;
 }
 
+.link-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 12px 22px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #396df2;
+  text-align: center;
+  gap: 14px;
+}
+
 .button {
   display: flex;
   align-items: center;
