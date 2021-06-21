@@ -192,6 +192,7 @@ p {
   color: #6070ff;
 }
 
+.nav-button,
 .menu-button {
   margin-right: 12px;
 }
@@ -483,16 +484,7 @@ form {
     font-weight: bold;
   }
 
-  .open-menu {
-    display: none;
-  }
-
-  .menu-overlay {
-    filter: none;
-  }
-
-  .menu-button,
-  .mobile-menu {
+  .nav-button {
     display: none;
   }
 
