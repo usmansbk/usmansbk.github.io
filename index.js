@@ -170,13 +170,13 @@ function createModal(project) {
         type: 'link',
         text: 'See live',
         icon: 'link',
-        href: '#live-link',
+        href: project.liveLink,
       }),
       Button({
         type: 'link',
         text: 'See Source',
         icon: 'github-blue',
-        href: '#source',
+        href: project.sourceCode,
       }),
     ],
   });
