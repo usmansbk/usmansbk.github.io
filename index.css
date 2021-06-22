@@ -440,6 +440,10 @@ form {
   padding-left: 6px;
 }
 
+.error {
+  border-color: #e74c3c;
+}
+
 .align-center {
   text-align: center;
 }

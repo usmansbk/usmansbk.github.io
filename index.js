@@ -320,12 +320,16 @@ setInterval(() => {
 }, 300);
 
 function validateForm(event) {
-  const { value } = form.elements.user_email;
+  const email = form.elements.user_email;
+  const { value } = email;
   const expected = value.toLowerCase();
   if (value !== expected) {
+    email.classList.add('error');
     const helperText = form.lastElementChild;
     helperText.innerText = `Email must be in lower case. Example: ${expected}`;
     event.preventDefault();
+  } else {
+    email.classList.remove('error');
   }
 }
 
