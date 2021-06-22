@@ -42,6 +42,7 @@ const closeMenuBtn = document.getElementById('close-menu');
 const navLinks = document.getElementById('mobile-nav');
 const modalContainer = document.getElementById('modal-container');
 const portfolio = document.getElementById('portfolio');
+const form = document.getElementById('contact-form');
 const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
@@ -318,6 +319,16 @@ setInterval(() => {
   }
 }, 300);
 
+function validateForm(event) {
+  const { value } = form.elements.user_email;
+  const expected = value.toLowerCase();
+  if (value !== expected) {
+    console.log(`Email must be in lower case. Example: ${expected}`);
+    event.preventDefault();
+  }
+}
+
+form.addEventListener('submit', validateForm);
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 navLinks.addEventListener('click', toggleMenu);
