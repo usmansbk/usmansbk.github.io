@@ -12,26 +12,13 @@ const DATA = {
     captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
+  }
+};
 
 const menu = document.querySelector('.mobile-menu');
 const overlay = Array.from(document.querySelectorAll('header, .headline, .works, .about-container, .contact-me'));
 const portfolio = document.querySelector('#portfolio');
 const mountModal = document.querySelector('#mount-modal');
-
-/**
- * Create a HTML element. Set it's attributes and apppend it's children to
- * the newly created Node.
- */
-function createComponent(name, props = {}) {
-  const { children = [], ...attributes } = props;
-  const element = document.createElement(name);
-  Object.keys(attributes).forEach((attribute) => {
-    element[attribute] = attributes[attribute];
-  });
-  children.forEach((child) => element.appendChild(child));
-
-  return element;
-}
 
 function Icon(name) {
   const icon = createComponent('img', {
@@ -218,19 +205,6 @@ function createCard(project, invert) {
   const title = Title(project.title);
   const captions = Captions(project.captions);
   const description = Paragraph(project.description);
-  const tags = Tags(project.tags);
-  const button = createComponent('button', {
-    type: 'button',
-    className: 'button',
-    textContent: 'See Project',
-  });
-
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    mountModal.appendChild(createModal(project));
-    toggleModal();
-  });
-
   const footer = createComponent('div', {
     className: 'action',
     children: [button],
@@ -268,15 +242,13 @@ function toggleMenu(event) {
   bodyTag.classList.toggle('off-scroll');
 
   menu.classList.toggle('open-menu');
-  // Toggle the background blur effect
-  overlay.forEach((part) => part.classList.toggle('menu-blur'));
 }
 
 function onClickNavLink() {
   toggleMenu();
 }
 
-let scrolling = false;
+let scrolling = true;
 function onScroll() {
   scrolling = true;
 }
