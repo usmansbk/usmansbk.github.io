@@ -323,7 +323,8 @@ function validateForm(event) {
   const { value } = form.elements.user_email;
   const expected = value.toLowerCase();
   if (value !== expected) {
-    console.log(`Email must be in lower case. Example: ${expected}`);
+    const helperText = form.lastElementChild;
+    helperText.innerText = `Email must be in lower case. Example: ${expected}`;
     event.preventDefault();
   }
 }
