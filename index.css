@@ -524,6 +524,11 @@ form {
   justify-content: center;
 }
 
+.action-button {
+  display: flex;
+  gap: 12px;
+}
+
 /* Spacing */
 .mt-12 {
   margin-top: 12px;
@@ -648,7 +653,6 @@ form {
   }
 
   .action-button {
-    display: flex;
     justify-content: center;
   }
 

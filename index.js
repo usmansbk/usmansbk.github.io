@@ -372,6 +372,7 @@ function onPageLoad() {
   populateForm();
 }
 
+form.addEventListener('reset', () => localStorage.removeItem(STORE_KEY));
 form.user_email.addEventListener('input', persistFormData);
 form.user_name.addEventListener('input', persistFormData);
 form.message.addEventListener('input', persistFormData);
