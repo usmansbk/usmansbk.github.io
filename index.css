@@ -705,3 +705,7 @@ form {
     margin-bottom: 32px;
   }
 }
+
+body {
+  background-color: black;
+}
