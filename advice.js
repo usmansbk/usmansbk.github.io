@@ -1,0 +1,1 @@
+alert("Hello, Friendly advice. Plagiarism takes us nowhere. You should endeavor to do the work yourself. If you can't build a simple portfolio yourself, then you're not ready to be a developer. It gets more difficult later. Then you'll realize you've wasted your time.");
