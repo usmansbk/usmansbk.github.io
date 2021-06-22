@@ -294,8 +294,6 @@ function loadProjects(data = []) {
   });
 }
 
-loadProjects(DATA);
-
 function toggleMenu() {
   menu.classList.toggle('open-menu');
   container.classList.toggle('menu-overlay');
@@ -324,3 +322,4 @@ openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 navLinks.addEventListener('click', toggleMenu);
 window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('load', () => loadProjects(DATA));
