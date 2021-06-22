@@ -294,7 +294,7 @@ function loadProjects(data = []) {
   });
 }
 
-// loadProjects(DATA);
+loadProjects(DATA);
 
 function toggleMenu() {
   menu.classList.toggle('open-menu');
