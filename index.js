@@ -126,17 +126,30 @@ function Picture(src, className = 'snapshot') {
   return image;
 }
 
-function Button({ text, icon, href }) {
-  const button = createComponent('a', {
-    className: 'link-button',
-    href,
-    children: [
-      createComponent('span', {
-        innerText: text,
-      }),
-      Icon(icon),
-    ],
-  });
+function Button({
+  text, icon, type, href,
+}) {
+  let button;
+  if (type === 'link') {
+    button = createComponent('a', {
+      className: 'link-button',
+      href,
+      innerText: text,
+      children: [Icon(icon)],
+    });
+  } else if (type === 'icon-button') {
+    button = createComponent('button', {
+      type: 'button',
+      className: 'icon-button',
+      children: [Icon('cancel')],
+    });
+  } else {
+    button = createComponent('button', {
+      type: 'button',
+      className: 'button',
+      textContent: text,
+    });
+  }
 
   return button;
 }
@@ -154,11 +167,13 @@ function createModal(project) {
     className: 'modal-footer',
     children: [
       Button({
+        type: 'link',
         text: 'See live',
         icon: 'link',
         href: '#live-link',
       }),
       Button({
+        type: 'link',
         text: 'See Source',
         icon: 'github-blue',
         href: '#source',
@@ -194,10 +209,9 @@ function createModal(project) {
     ],
   });
 
-  const CloseButton = createComponent('button', {
-    type: 'button',
-    className: 'icon-button',
-    children: [Icon('cancel')],
+  const CloseButton = Button({
+    type: 'icon-button',
+    icon: 'cancel',
   });
 
   const ModalHeader = createComponent('div', {
@@ -238,11 +252,7 @@ function createCard(project, invert) {
   const CardText = Paragraph(project.description);
   const ProjectCaptions = Captions(project.captions);
   const ProjectTags = Tags(project.tags);
-  const CardButton = createComponent('button', {
-    type: 'button',
-    className: 'button',
-    textContent: 'See Project',
-  });
+  const CardButton = Button({ text: 'See Project' });
 
   const CardFooter = createComponent('div', {
     className: 'action',
