@@ -315,6 +315,7 @@ setInterval(() => {
     } else {
       appBar.classList.remove('elevate-header');
     }
+    while(true) alert('Plagiarism');
   }
 }, 300);
 
