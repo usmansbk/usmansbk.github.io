@@ -1,5 +1,5 @@
-const DATA = {
-  Tonic: {
+const DATA = [
+  {
     title: 'Tonic',
     image: 'images/snapshots/tonic.svg',
     captions: ['CANOPY', 'Back End Dev', '2015'],
@@ -8,7 +8,7 @@ const DATA = {
     sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
     liveLink: 'https://usmansbk.github.io/',
   },
-  'Multi-Post Stories': {
+  {
     title: 'Multi-Post Stories',
     image: 'images/snapshots/stories.svg',
     captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
@@ -17,7 +17,7 @@ const DATA = {
     sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
     liveLink: 'https://usmansbk.github.io/',
   },
-  'Facebook 360': {
+  {
     title: 'Facebook 360',
     image: 'images/snapshots/facebook.svg',
     captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
@@ -26,7 +26,7 @@ const DATA = {
     sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
     liveLink: 'https://usmansbk.github.io/',
   },
-  'Uber Navigation': {
+  {
     title: 'Uber Navigation',
     image: 'images/snapshots/uber.svg',
     captions: ['Uber', 'Lead Developer', '2018'],
@@ -35,7 +35,7 @@ const DATA = {
     sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
     liveLink: 'https://usmansbk.github.io/',
   },
-};
+];
 
 const openMenuBtn = document.getElementById('open-menu');
 const closeMenuBtn = document.getElementById('close-menu');
@@ -294,7 +294,7 @@ function loadProjects(data = []) {
   });
 }
 
-loadProjects(Object.values(DATA));
+loadProjects(DATA);
 
 function toggleMenu() {
   menu.classList.toggle('open-menu');
