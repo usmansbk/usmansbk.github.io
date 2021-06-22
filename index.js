@@ -88,6 +88,7 @@ function Title(text) {
     className: 'header-3 color-n800 mb-12',
     textContent: text,
   });
+
   return title;
 }
 
@@ -96,6 +97,7 @@ function Paragraph(text) {
     className: 'body-3 color-n600 mb-12',
     textContent: text,
   });
+
   return paragraph;
 }
 
@@ -193,9 +195,8 @@ function createModal(project) {
   });
 
   const CloseButton = createComponent('button', {
-    id: 'close-modal',
+    type: 'button',
     className: 'icon-button',
-    href: '#close-modal',
     children: [Icon('cancel')],
   });
 
