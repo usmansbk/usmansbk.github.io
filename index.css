@@ -440,6 +440,10 @@ form {
   padding-left: 6px;
 }
 
+.error {
+  border-color: #e74c3c;
+}
+
 .align-center {
   text-align: center;
 }
@@ -551,6 +555,7 @@ form {
 }
 
 .divider {
+  background-color: #ebebf0;
   border: 1px solid #ebecf0;
 }
 
