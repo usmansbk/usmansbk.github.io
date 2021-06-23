@@ -367,12 +367,18 @@ function populateForm() {
   }
 }
 
+function resetForm() {
+  localStorage.removeItem(STORE_KEY);
+  const email = form.elements.user_email;
+  email.classList.remove('error');
+}
+
 function onPageLoad() {
   loadProjects(DATA);
   populateForm();
 }
 
-form.addEventListener('reset', () => localStorage.removeItem(STORE_KEY));
+form.addEventListener('reset', resetForm);
 form.user_email.addEventListener('input', persistFormData);
 form.user_name.addEventListener('input', persistFormData);
 form.message.addEventListener('input', persistFormData);
