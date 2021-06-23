@@ -46,6 +46,7 @@ const form = document.getElementById('contact-form');
 const appBar = document.querySelector('.app-bar');
 const menu = document.querySelector('.mobile-menu');
 const container = document.querySelector('.container');
+const helperText = document.getElementById('helper-text');
 
 /**
  * Helper function for creating HTML DOM elements
@@ -325,7 +326,6 @@ function validateForm(event) {
   const expected = value.toLowerCase();
   if (value !== expected) {
     email.classList.add('error');
-    const helperText = form.lastElementChild;
     helperText.innerText = `Email must be in lower case. Example: ${expected}`;
     event.preventDefault();
   } else {
