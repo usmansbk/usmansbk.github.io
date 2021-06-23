@@ -442,6 +442,7 @@ form {
 
 .error {
   border-color: #e74c3c;
+  color: #e74c3c;
 }
 
 .align-center {
