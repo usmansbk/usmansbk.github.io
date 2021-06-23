@@ -371,6 +371,7 @@ function resetForm() {
   localStorage.removeItem(STORE_KEY);
   const email = form.elements.user_email;
   email.classList.remove('error');
+  helperText.innerText = '';
 }
 
 function onPageLoad() {
