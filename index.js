@@ -333,9 +333,52 @@ function validateForm(event) {
   }
 }
 
+const STORE_KEY = 'formData';
+
+/**
+ * This function will save the user current input
+ * in local storage.
+ */
+function persistFormData(event) {
+  let currentData = {};
+  const storedData = localStorage.getItem(STORE_KEY);
+
+  if (storedData) {
+    currentData = JSON.parse(storedData);
+  }
+
+  const { name, value } = event.target;
+  currentData[name] = value;
+  localStorage.setItem(STORE_KEY, JSON.stringify(currentData));
+}
+
+/**
+ * This function will check for saved form data,
+ * and populate the page contact form if found.
+ */
+function populateForm() {
+  const dataString = localStorage.getItem(STORE_KEY);
+
+  if (dataString) {
+    const storedData = JSON.parse(dataString);
+    Object.keys(storedData).forEach((key) => {
+      form[key].value = storedData[key];
+    });
+  }
+}
+
+function onPageLoad() {
+  loadProjects(DATA);
+  populateForm();
+}
+
+form.addEventListener('reset', () => localStorage.removeItem(STORE_KEY));
+form.user_email.addEventListener('input', persistFormData);
+form.user_name.addEventListener('input', persistFormData);
+form.message.addEventListener('input', persistFormData);
 form.addEventListener('submit', validateForm);
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 navLinks.addEventListener('click', toggleMenu);
 window.addEventListener('scroll', onScroll, { passive: true });
-window.addEventListener('load', () => loadProjects(DATA));
+window.addEventListener('load', onPageLoad);
