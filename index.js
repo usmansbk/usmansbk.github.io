@@ -1,12 +1,12 @@
 const DATA = [
   {
-    title: 'Tonic',
-    image: 'images/snapshots/tonic.svg',
-    captions: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javaScript'],
-    sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
-    liveLink: 'https://usmansbk.github.io/',
+    title: 'AGE Conference',
+    image: 'images/snapshots/ageconf.png',
+    captions: ['Microverse', 'Frontend Dev', '2021'],
+    description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
+    tags: ['html', 'sass', 'JavaScript'],
+    sourceCode: 'https://github.com/usmansbk/html-css-js-capstone',
+    liveLink: 'https://usmansbk.github.io/html-css-js-capstone',
   },
   {
     title: 'Multi-Post Stories',
