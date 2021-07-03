@@ -706,9 +706,10 @@ form {
     width: 100%;
   }
 
-  .snapshot {
+  /* .snapshot {
+    width: 544px;
     height: 448px;
-  }
+  } */
 
   .swap {
     order: -1;
