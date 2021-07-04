@@ -1,7 +1,8 @@
 const DATA = [
   {
     title: 'AGE Conference',
-    image: 'images/snapshots/ageconf.png',
+    thumbnail: 'images/snapshots/ageconf.png',
+    image: 'images/snapshots/ageconf_modal.png',
     captions: ['Microverse', 'Frontend Dev', '2021'],
     description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
     tags: ['html', 'sass', 'JavaScript'],
@@ -10,6 +11,7 @@ const DATA = [
   },
   {
     title: 'Multi-Post Stories',
+    thumbnail: 'images/snapshots/stories.svg',
     image: 'images/snapshots/stories.svg',
     captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -19,6 +21,7 @@ const DATA = [
   },
   {
     title: 'Facebook 360',
+    thumbnail: 'images/snapshots/facebook.svg',
     image: 'images/snapshots/facebook.svg',
     captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
@@ -28,6 +31,7 @@ const DATA = [
   },
   {
     title: 'Uber Navigation',
+    thumbnail: 'images/snapshots/uber.svg',
     image: 'images/snapshots/uber.svg',
     captions: ['Uber', 'Lead Developer', '2018'],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
@@ -257,7 +261,7 @@ function createModal(project) {
  * to be inserted into the project section on the main page.
  */
 function createCard(project, invert) {
-  const CardImage = Picture(project.image);
+  const CardImage = Picture(project.thumbnail);
   const CardTitle = Title(project.title);
   const CardText = Paragraph(project.description);
   const ProjectCaptions = Captions(project.captions);
