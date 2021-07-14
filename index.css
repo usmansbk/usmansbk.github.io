@@ -170,6 +170,8 @@ p {
 }
 
 .logo {
+  font-weight: bold;
+  font-size: 20px;
   height: 40px;
   display: flex;
   align-items: center;
