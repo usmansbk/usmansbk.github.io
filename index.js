@@ -1,8 +1,8 @@
 const DATA = [
   {
     title: 'FlappyBird',
-    thumbnail: 'images/snapshots/flappybird.jpeg',
-    image: 'images/snapshots/flappybird.jpeg',
+    thumbnail: 'images/snapshots/flappybird.png',
+    image: 'images/snapshots/flappybird.png',
     captions: ['MintBean', 'Game Dev', '2021'],
     description: 'Flappy Bird is an arcade-style game in which you control the bird Faby, which moves persistently to the right.',
     tags: ['Phaser3', 'javaScript'],
@@ -12,7 +12,7 @@ const DATA = [
   {
     title: 'AGE Conference',
     thumbnail: 'images/snapshots/ageconf.png',
-    image: 'images/snapshots/ageconf.png',
+    image: 'images/snapshots/ageconf-full.png',
     captions: ['Microverse', 'Frontend Dev', '2021'],
     description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
     tags: ['html', 'sass', 'JavaScript'],
