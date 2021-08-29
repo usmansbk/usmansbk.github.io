@@ -1,6 +1,6 @@
 const DATA = [
   {
-    title: 'FlappyBird',
+    title: 'Flappy Bird',
     thumbnail: 'images/snapshots/flappybird.png',
     image: 'images/snapshots/flappybird.png',
     captions: ['MintBean', 'Game Dev', '2021'],
