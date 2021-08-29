@@ -1,15 +1,5 @@
 const DATA = [
   {
-    title: 'AGE Conference',
-    thumbnail: 'images/snapshots/ageconf.png',
-    image: 'images/snapshots/ageconf_modal.png',
-    captions: ['Microverse', 'Frontend Dev', '2021'],
-    description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
-    tags: ['html', 'sass', 'JavaScript'],
-    sourceCode: 'https://github.com/usmansbk/html-css-js-capstone',
-    liveLink: 'https://usmansbk.github.io/html-css-js-capstone',
-  },
-  {
     title: 'FlappyBird',
     thumbnail: 'images/snapshots/flappybird.jpeg',
     image: 'images/snapshots/flappybird.jpeg',
@@ -20,24 +10,14 @@ const DATA = [
     liveLink: 'https://blissful-wiles-7bf90a.netlify.app/',
   },
   {
-    title: 'Facebook 360',
-    thumbnail: 'images/snapshots/facebook.svg',
-    image: 'images/snapshots/facebook.svg',
-    captions: ['FACEBOOK', 'Full Stack Dev', '2015'],
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
-    liveLink: 'https://usmansbk.github.io/',
-  },
-  {
-    title: 'Uber Navigation',
-    thumbnail: 'images/snapshots/uber.svg',
-    image: 'images/snapshots/uber.svg',
-    captions: ['Uber', 'Lead Developer', '2018'],
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    tags: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    sourceCode: 'https://github.com/usmansbk/usmansbk.github.io',
-    liveLink: 'https://usmansbk.github.io/',
+    title: 'AGE Conference',
+    thumbnail: 'images/snapshots/ageconf.png',
+    image: 'images/snapshots/ageconf.png',
+    captions: ['Microverse', 'Frontend Dev', '2021'],
+    description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
+    tags: ['html', 'sass', 'JavaScript'],
+    sourceCode: 'https://github.com/usmansbk/html-css-js-capstone',
+    liveLink: 'https://usmansbk.github.io/html-css-js-capstone',
   },
 ];
 
