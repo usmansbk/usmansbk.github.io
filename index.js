@@ -5,7 +5,7 @@ const DATA = [
     image: 'images/snapshots/share-do-full.png',
     captions: ['Side Project', 'Full Stack Dev', '2020'],
     description: 'Share-do is a mobile app that allows you share your schedules with your team (Family, Friends, Classmates, etc)',
-    tags: ['ReactNative', 'ExpressJs', 'Firebase', 'PostgreSQL', 'AWS DynamoDB', 'Typescript'],
+    tags: ['ReactNative', 'ExpressJs', 'Firebase', 'PostgreSQL', 'AWS DynamoDB', 'Typescript', 'GraphQL'],
     sourceCode: 'https://github.com/usmansbk/share-do-landing',
     liveLink: 'https://serene-mirzakhani-2aa3ef.netlify.app/',
   },
