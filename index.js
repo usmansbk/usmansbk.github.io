@@ -1,13 +1,23 @@
 const DATA = [
   {
     title: 'Share.do',
-    thumbnail: 'images/snapshots/share-do.png',
-    image: 'images/snapshots/share-do-full.png',
+    thumbnail: 'images/snapshots/share-do-thumb.png',
+    image: 'images/snapshots/share-do.png',
     captions: ['Side Project', 'Full Stack Dev', '2020'],
     description: 'Share-do is a mobile app that allows you share your schedules with your team (Family, Friends, Classmates, etc)',
     tags: ['ReactNative', 'ExpressJs', 'Firebase', 'PostgreSQL', 'AWS DynamoDB', 'Typescript', 'GraphQL'],
     sourceCode: 'https://github.com/usmansbk/share-do-landing',
     liveLink: 'https://serene-mirzakhani-2aa3ef.netlify.app/',
+  },
+  {
+    title: 'My Reads',
+    thumbnail: 'images/snapshots/my-reads-thumb.png',
+    image: 'images/snapshots/my-reads.png',
+    captions: ['Udacity', 'Frontend', '2020'],
+    description: 'My Reads is a bookshelf app that allows you to organize your books. It has an easily searchable database for you to find new books.',
+    tags: ['React', 'Redux', 'REST'],
+    sourceCode: 'https://github.com/usmansbk/reactnd-project-myreads-starter',
+    liveLink: 'https://compassionate-clarke-059d4c.netlify.app/',
   },
   {
     title: 'Flappy Bird',
@@ -18,16 +28,6 @@ const DATA = [
     tags: ['Phaser3', 'javaScript'],
     sourceCode: 'https://github.com/usmansbk/flappy-bird',
     liveLink: 'https://blissful-wiles-7bf90a.netlify.app/',
-  },
-  {
-    title: 'AGE Conference',
-    thumbnail: 'images/snapshots/ageconf.png',
-    image: 'images/snapshots/ageconf-full.png',
-    captions: ['Microverse', 'Frontend Dev', '2021'],
-    description: 'A virtual conference on gender equality in Africa to present new knowledge, promote truly Afican solutions, and engage a broad spectrum of voices.',
-    tags: ['html', 'sass', 'JavaScript'],
-    sourceCode: 'https://github.com/usmansbk/html-css-js-capstone',
-    liveLink: 'https://usmansbk.github.io/html-css-js-capstone',
   },
 ];
 
