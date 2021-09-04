@@ -20,6 +20,16 @@ const DATA = [
     liveLink: 'https://compassionate-clarke-059d4c.netlify.app/',
   },
   {
+    title: 'Would You Rather',
+    thumbnail: 'images/snapshots/would-you-rather-thumb.png',
+    image: 'images/snapshots/would-you-rather.png',
+    captions: ['Udacity', 'Frontend', '2020'],
+    description: 'A variation of "Would You Rather?" game. The game provides the user with two choices, and the user has to decide whether to choose option A or option B.',
+    tags: ['React', 'Redux'],
+    sourceCode: 'https://github.com/usmansbk/would-you-rather',
+    liveLink: 'https://elastic-rosalind-64ba5a.netlify.app/',
+  },
+  {
     title: 'Flappy Bird',
     thumbnail: 'images/snapshots/flappybird.png',
     image: 'images/snapshots/flappybird.png',
