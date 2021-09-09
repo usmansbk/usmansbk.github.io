@@ -22,8 +22,9 @@ const DATA = [
     title: "Trello",
     thumbnail: "images/snapshots/trello.png",
     image: "images/snapshots/trello.png",
-    captions: ["WIP", "Frontend", "2020"],
-    description: "Trello board desktop app clone",
+    captions: ["MintBean", "Frontend", "2020"],
+    description:
+      "A kanban board is an agile project management tool designed to help visualize work and maximize efficiency, like a bunch of post-its on a wall.",
     tags: ["React", "Redux"],
     sourceCode: "https://github.com/usmansbk/trello",
     liveLink: "https://sleepy-bose-508e6f.netlify.app/",
