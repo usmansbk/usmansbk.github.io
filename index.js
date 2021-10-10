@@ -41,6 +41,17 @@ const DATA = [
     liveLink: "https://pomodo-dragon.netlify.app/",
   },
   {
+    title: "Flappy Bird",
+    thumbnail: "images/snapshots/flappybird.png",
+    image: "images/snapshots/flappybird.png",
+    captions: ["MintBean", "Game Dev", "2021"],
+    description:
+      "Flappy Bird is an arcade-style game in which you control the bird Faby, which moves persistently to the right.",
+    tags: ["Phaser3", "javaScript"],
+    sourceCode: "https://github.com/usmansbk/flappy-bird",
+    liveLink: "https://blissful-wiles-7bf90a.netlify.app/",
+  },
+  {
     title: "My Reads",
     thumbnail: "images/snapshots/my-reads-thumb.png",
     image: "images/snapshots/my-reads.png",
@@ -61,17 +72,6 @@ const DATA = [
     tags: ["React", "Redux"],
     sourceCode: "https://github.com/usmansbk/would-you-rather",
     liveLink: "https://elastic-rosalind-64ba5a.netlify.app/",
-  },
-  {
-    title: "Flappy Bird",
-    thumbnail: "images/snapshots/flappybird.png",
-    image: "images/snapshots/flappybird.png",
-    captions: ["MintBean", "Game Dev", "2021"],
-    description:
-      "Flappy Bird is an arcade-style game in which you control the bird Faby, which moves persistently to the right.",
-    tags: ["Phaser3", "javaScript"],
-    sourceCode: "https://github.com/usmansbk/flappy-bird",
-    liveLink: "https://blissful-wiles-7bf90a.netlify.app/",
   },
 ];
 
