@@ -30,6 +30,17 @@ const DATA = [
     liveLink: "https://sleepy-bose-508e6f.netlify.app/",
   },
   {
+    title: "Pomofocus",
+    thumbnail: "images/snapshots/pomofocus.png",
+    image: "images/snapshots/pomofocus.png",
+    captions: ["Frontend", "2020"],
+    description:
+      "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by Pomodoro Technique which is a time management method developed by Francesco Cirillo.",
+    tags: ["React", "Redux"],
+    sourceCode: "https://github.com/usmansbk/pomofocus",
+    liveLink: "https://pomodo-dragon.netlify.app/",
+  },
+  {
     title: "My Reads",
     thumbnail: "images/snapshots/my-reads-thumb.png",
     image: "images/snapshots/my-reads.png",
